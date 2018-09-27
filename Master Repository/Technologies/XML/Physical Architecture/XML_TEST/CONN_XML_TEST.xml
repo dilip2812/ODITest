@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SunopsisExport>
 <Admin RepositoryVersion="05.02.02.07" IsLegacyIdCompatible="false" />
-<Encryption algorithm="AES" keyLength="128" exportKeyHash="" keyVect="YSkIepX4v57O4qCBJFH8gw==" exportKeySalt="c34b971f-26c3-4b49-8078-ac2a2a38381e" containsCipherText="false"/>
+<Encryption algorithm="AES" keyLength="128" exportKeyHash="" keyVect="k+dFXEPMG0wj5IE/omP+7w==" exportKeySalt="7e736c2b-6d4d-47cc-b4ac-f7fd9a6c51e4" containsCipherText="false"/>
 <Object class="com.sunopsis.dwg.dbobj.SnpConnect">
 		<Field name="AuthenMethod" type="java.lang.String">null</Field>
 	<Field name="BatchUpdateSize" type="com.sunopsis.sql.DbInt"><![CDATA[30]]></Field>
@@ -20,7 +20,7 @@
 	<Field name="HiveMsUri" type="java.lang.String">null</Field>
 	<Field name="IdentityDomainName" type="java.lang.String">null</Field>
 	<Field name="IndJndi" type="java.lang.String"><![CDATA[0]]></Field>
-	<Field name="IntVersion" type="com.sunopsis.sql.DbInt"><![CDATA[11]]></Field>
+	<Field name="IntVersion" type="com.sunopsis.sql.DbInt"><![CDATA[12]]></Field>
 	<Field name="IConnect" type="com.sunopsis.sql.DbInt"><![CDATA[38]]></Field>
 	<Field name="IHost" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
 	<Field name="ITechno" type="com.sunopsis.sql.DbInt"><![CDATA[140]]></Field>
@@ -37,7 +37,7 @@
 	<Field name="JndiPwd" type="java.lang.String">null</Field>
 	<Field name="JndiRessource" type="java.lang.String"><![CDATA[/dataload/v1]]></Field>
 	<Field name="JndiUser" type="java.lang.String">null</Field>
-	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2018-09-27 11:11:32.0]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2018-09-27 11:12:18.0]]></Field>
 	<Field name="LastUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
 	<Field name="OggInstallPath" type="java.lang.String">null</Field>
 	<Field name="OnConApplyCond" type="java.lang.String">null</Field>
@@ -110,6 +110,13 @@
 	<Field name="PropValueClob" type="java.lang.String"><![CDATA[C:\Users\Uttam Suthar\Desktop\ODI_Training\Files\RESPONSE.xml]]></Field>
 </Object>
 <Object class="com.sunopsis.dwg.dbobj.SnpConnectProp">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[710f1a64-1ecb-4a0a-b9f9-5a66d445096f]]></Field>
+	<Field name="IndUndefined" type="java.lang.String">null</Field>
+	<Field name="IConnect" type="com.sunopsis.sql.DbInt"><![CDATA[38]]></Field>
+	<Field name="PropKey" type="java.lang.String"><![CDATA[generate_dtd]]></Field>
+	<Field name="PropValueClob" type="java.lang.String"><![CDATA[Yes]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpConnectProp">
 		<Field name="GlobalId" type="java.lang.String"><![CDATA[6359e240-e07e-4008-ae99-318be8d23cc0]]></Field>
 	<Field name="IndUndefined" type="java.lang.String">null</Field>
 	<Field name="IConnect" type="com.sunopsis.sql.DbInt"><![CDATA[38]]></Field>
@@ -163,7 +170,7 @@
 	<Field name="MorigTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
 	<Field name="MtxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
 	<Field name="OrigTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
-	<Field name="OtherObjectsNb" type="com.sunopsis.sql.DbInt"><![CDATA[9]]></Field>
+	<Field name="OtherObjectsNb" type="com.sunopsis.sql.DbInt"><![CDATA[10]]></Field>
 	<Field name="PlanAgentNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
 	<Field name="StepNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
 	<Field name="TxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
