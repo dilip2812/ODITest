@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SunopsisExport>
+<Admin RepositoryVersion="05.02.02.07" IsLegacyIdCompatible="false" />
+<Encryption algorithm="AES" keyLength="128" exportKeyHash="" keyVect="gPhmlTZUGflxQHx6s3/UQg==" exportKeySalt="58f586be-90c5-40dd-92fc-3da4670ea1c3" containsCipherText="false"/>
+<Object class="com.sunopsis.dwg.dbobj.SnpTable">
+		<Field name="ExtVersion" type="java.lang.String">null</Field>
+	<Field name="FileDecSep" type="java.lang.String">null</Field>
+	<Field name="FileEncField" type="java.lang.String">null</Field>
+	<Field name="FileEscChar" type="java.lang.String">null</Field>
+	<Field name="FileFirstRow" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="FileFormat" type="java.lang.String">null</Field>
+	<Field name="FileNullValue" type="java.lang.String">null</Field>
+	<Field name="FileSepColl" type="java.lang.String">null</Field>
+	<Field name="FileSepField" type="java.lang.String">null</Field>
+	<Field name="FileSepMap" type="java.lang.String">null</Field>
+	<Field name="FileSepRow" type="java.lang.String">null</Field>
+	<Field name="FirstDate" type="java.sql.Timestamp"><![CDATA[2018-09-21 09:11:46.0]]></Field>
+	<Field name="FirstUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[afd8dcf1-2541-47b6-af85-1b0cdf2cf4b6]]></Field>
+	<Field name="HiveBuckets" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="HiveLocation" type="java.lang.String">null</Field>
+	<Field name="HiveRowFormat" type="java.lang.String">null</Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[U]]></Field>
+	<Field name="IndErrDel" type="java.lang.String">null</Field>
+	<Field name="IndFilePosAuto" type="java.lang.String">null</Field>
+	<Field name="IndHiveManaged" type="java.lang.String">null</Field>
+	<Field name="IndHiveNative" type="java.lang.String">null</Field>
+	<Field name="IndJrn" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndShow" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IndWs" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="InputFormat" type="java.lang.String">null</Field>
+	<Field name="IntVersion" type="com.sunopsis.sql.DbInt"><![CDATA[4]]></Field>
+	<Field name="IMod" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="IScBaseTable" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IScOrigTable" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IScTable" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ISubModel" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="ITable" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="ITableFormatType" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtDesc" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtWsdl" type="com.sunopsis.sql.DbInt"><![CDATA[1192]]></Field>
+	<Field name="JrnOrder" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2018-09-27 01:24:03.0]]></Field>
+	<Field name="LastUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="OlapType" type="java.lang.String">null</Field>
+	<Field name="OutputFormat" type="java.lang.String">null</Field>
+	<Field name="PartitionMeth" type="java.lang.String">null</Field>
+	<Field name="ResName" type="java.lang.String"><![CDATA[COUNTRIES]]></Field>
+	<Field name="RCount" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="SchemaFile" type="java.lang.String">null</Field>
+	<Field name="ScOrigTableTag" type="java.lang.String">null</Field>
+	<Field name="Serde" type="java.lang.String">null</Field>
+	<Field name="SerdeProp" type="java.lang.String">null</Field>
+	<Field name="StorageHandler" type="java.lang.String">null</Field>
+	<Field name="StorageProp" type="java.lang.String">null</Field>
+	<Field name="SubPartitionMeth" type="java.lang.String">null</Field>
+	<Field name="TableAlias" type="java.lang.String"><![CDATA[COUNTRIES]]></Field>
+	<Field name="TableName" type="java.lang.String"><![CDATA[COUNTRIES]]></Field>
+	<Field name="TableProp" type="java.lang.String">null</Field>
+	<Field name="TableType" type="java.lang.String"><![CDATA[T]]></Field>
+	<Field name="WsEntityName" type="java.lang.String"><![CDATA[Countries]]></Field>
+	<Field name="WsName" type="java.lang.String"><![CDATA[WSCountries]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpTxtHeader">
+		<Field name="Enc" type="java.lang.String">null</Field>
+	<Field name="EncKey" type="java.lang.String">null</Field>
+ <Field name="EncKeyVect" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[aa4dbe89-b311-4f79-8e3c-a29bf0319a37]]></Field>
+	<Field name="ITxt" type="com.sunopsis.sql.DbInt"><![CDATA[1192]]></Field>
+	<Field name="ITxtOrig" type="com.sunopsis.sql.DbInt"><![CDATA[100]]></Field>
+	<Field name="SqlIndGrp" type="java.lang.String"><![CDATA[0]]></Field>
+ <Field name="Txt" type="java.lang.String"><![CDATA[<?xml version = '1.0' encoding = 'UTF-8'?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="WS/WSCountries/wsdl" xmlns:tns="WS/WSCountries/wsdl" xmlns:types="WS/WSCountries/schema"><wsdl:types><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="WS/WSCountries/schema" attributeFormDefault="unqualified" elementFormDefault="unqualified"><xs:element name="QueryFilter"><xs:complexType><xs:sequence><xs:element name="MaxRowCount" type="xs:int" minOccurs="0"><xs:annotation><xs:documentation>Maximum number of rows that the query should return</xs:documentation></xs:annotation></xs:element><xs:element ref="types:Countries"><xs:annotation><xs:documentation>Partial entity which acts as filter for the select. Entities that match this filter will be updated with data from the select entity.</xs:documentation></xs:annotation></xs:element><xs:element name="AdditionalWhereExpression" type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Additional SQL WHERE expression (without WHERE)</xs:documentation></xs:annotation></xs:element><xs:element name="OrderByExpression" type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>SQL ORDER BY expression (without ORDER BY keyword)</xs:documentation></xs:annotation></xs:element></xs:sequence></xs:complexType></xs:element><xs:element name="UpdateDeleteFilter"><xs:complexType><xs:sequence><xs:element ref="types:Countries"><xs:annotation><xs:documentation>Partial entity which acts as filter for the update. Entities that match this filter will be updated with data from the update entity.</xs:documentation></xs:annotation></xs:element><xs:element name="AdditionalWhereExpression" type="xs:string" minOccurs="0"><xs:annotation><xs:documentation>Additional SQL WHERE expression (without WHERE)</xs:documentation></xs:annotation></xs:element></xs:sequence></xs:complexType></xs:element><xs:element name="QueryResponse"><xs:complexType><xs:sequence><xs:element name="NbAffected" type="xs:int"><xs:annotation><xs:documentation>Number of rows affected by query (inserted, updated or deleted)</xs:documentation></xs:annotation></xs:element></xs:sequence></xs:complexType></xs:element><xs:element name="Countries" nillable="true"><xs:complexType><xs:sequence><xs:element name="COUNTRY_ID" type="xs:string" minOccurs="0" nillable="true"><xs:annotation><xs:documentation>COUNTRY_ID</xs:documentation></xs:annotation></xs:element><xs:element name="COUNTRY_NAME" type="xs:string" minOccurs="0" nillable="true"><xs:annotation><xs:documentation>COUNTRY_NAME</xs:documentation></xs:annotation></xs:element><xs:element name="REGION_ID" type="xs:decimal" minOccurs="0" nillable="true"><xs:annotation><xs:documentation>REGION_ID</xs:documentation></xs:annotation></xs:element></xs:sequence></xs:complexType></xs:element><xs:element name="CountriesList"><xs:complexType><xs:sequence><xs:element ref="types:Countries" minOccurs="0" maxOccurs="unbounded"/></xs:sequence></xs:complexType></xs:element><xs:element name="UpdateFilter"><xs:complexType><xs:sequence><xs:element ref="types:Countries"><xs:annotation><xs:documentation>Partial entity containing new values to update with.</xs:documentation></xs:annotation></xs:element><xs:element ref="types:UpdateDeleteFilter"><xs:annotation><xs:documentation>Filter used for updates</xs:documentation></xs:annotation></xs:element></xs:sequence></xs:complexType></xs:element><xs:element name="deleteCountriesRequestElement"><xs:complexType><xs:sequence><xs:element ref="types:Countries"/></xs:sequence></xs:complexType></xs:element><xs:element name="deleteCountriesResponseElement"><xs:complexType><xs:sequence><xs:element ref="types:QueryResponse"/></xs:sequence></xs:complexType></xs:element><xs:element name="getCountriesListRequestElement"><xs:complexType><xs:sequence><xs:element ref="types:CountriesList"/></xs:sequence></xs:complexType></xs:element><xs:element name="getCountriesListResponseElement"><xs:complexType><xs:sequence><xs:element ref="types:CountriesList"/></xs:sequence></xs:complexType></xs:element><xs:element name="getCountriesRequestElement"><xs:complexType><xs:sequence><xs:element ref="types:Countries"/></xs:sequence></xs:complexType></xs:element><xs:element name="getCountriesResponseElement"><xs:complexType><xs:sequence><xs:element ref="types:Countries"/></xs:sequence></xs:complexType></xs:element><xs:element name="addCountriesRequestElement"><xs:complexType><xs:sequence><xs:element ref="types:Countries"/></xs:sequence></xs:complexType></xs:element><xs:element name="addCountriesResponseElement"><xs:complexType><xs:sequence><xs:element ref="types:QueryResponse"/></xs:sequence></xs:complexType></xs:element><xs:element name="addCountriesListRequestElement"><xs:complexType><xs:sequence><xs:element ref="types:CountriesList"/></xs:sequence></xs:complexType></xs:element><xs:element name="addCountriesListResponseElement"><xs:complexType><xs:sequence><xs:element ref="types:QueryResponse"/></xs:sequence></xs:complexType></xs:element><xs:element name="updateCountriesRequestElement"><xs:complexType><xs:sequence><xs:element ref="types:Countries"/></xs:sequence></xs:complexType></xs:element><xs:element name="updateCountriesResponseElement"><xs:complexType><xs:sequence><xs:element ref="types:QueryResponse"/></xs:sequence></xs:complexType></xs:element><xs:element name="deleteCountriesListRequestElement"><xs:complexType><xs:sequence><xs:element ref="types:CountriesList"/></xs:sequence></xs:complexType></xs:element><xs:element name="deleteCountriesListResponseElement"><xs:complexType><xs:sequence><xs:element ref="types:QueryResponse"/></xs:sequence></xs:complexType></xs:element><xs:element name="deleteCountriesFilterRequestElement"><xs:complexType><xs:sequence><xs:element ref="types:UpdateDeleteFilter"/></xs:sequence></xs:complexType></xs:element><xs:element name="deleteCountriesFilterResponseElement"><xs:complexType><xs:sequence><xs:element ref="types:QueryResponse"/></xs:sequence></xs:complexType></xs:element><xs:element name="getCountriesFilterRequestElement"><xs:complexType><xs:sequence><xs:element ref="types:QueryFilter"/></xs:sequence></xs:complexType></xs:element><xs:element name="getCountriesFilterResponseElement"><xs:complexType><xs:sequence><xs:element ref="types:CountriesList"/></xs:sequence></xs:complexType></xs:element><xs:element name="updateCountriesListRequestElement"><xs:complexType><xs:sequence><xs:element ref="types:CountriesList"/></xs:sequence></xs:complexType></xs:element><xs:element name="updateCountriesListResponseElement"><xs:complexType><xs:sequence><xs:element ref="types:QueryResponse"/></xs:sequence></xs:complexType></xs:element><xs:element name="updateCountriesFilterRequestElement"><xs:complexType><xs:sequence><xs:element ref="types:UpdateFilter"/></xs:sequence></xs:complexType></xs:element><xs:element name="updateCountriesFilterResponseElement"><xs:complexType><xs:sequence><xs:element ref="types:QueryResponse"/></xs:sequence></xs:complexType></xs:element></xs:schema></wsdl:types><wsdl:message name="deleteCountriesRequest"><wsdl:part name="deleteCountriesRequestPart" element="types:deleteCountriesRequestElement"/></wsdl:message><wsdl:message name="deleteCountriesResponse"><wsdl:part name="deleteCountriesResponsePart" element="types:deleteCountriesResponseElement"/></wsdl:message><wsdl:message name="getCountriesListRequest"><wsdl:part name="getCountriesListRequestPart" element="types:getCountriesListRequestElement"/></wsdl:message><wsdl:message name="getCountriesListResponse"><wsdl:part name="getCountriesListResponsePart" element="types:getCountriesListResponseElement"/></wsdl:message><wsdl:message name="getCountriesRequest"><wsdl:part name="getCountriesRequestPart" element="types:getCountriesRequestElement"/></wsdl:message><wsdl:message name="getCountriesResponse"><wsdl:part name="getCountriesResponsePart" element="types:getCountriesResponseElement"/></wsdl:message><wsdl:message name="addCountriesRequest"><wsdl:part name="addCountriesRequestPart" element="types:addCountriesRequestElement"/></wsdl:message><wsdl:message name="addCountriesResponse"><wsdl:part name="addCountriesResponsePart" element="types:addCountriesResponseElement"/></wsdl:message><wsdl:message name="addCountriesListRequest"><wsdl:part name="addCountriesListRequestPart" element="types:addCountriesListRequestElement"/></wsdl:message><wsdl:message name="addCountriesListResponse"><wsdl:part name="addCountriesListResponsePart" element="types:addCountriesListResponseElement"/></wsdl:message><wsdl:message name="updateCountriesRequest"><wsdl:part name="updateCountriesRequestPart" element="types:updateCountriesRequestElement"/></wsdl:message><wsdl:message name="updateCountriesResponse"><wsdl:part name="updateCountriesResponsePart" element="types:updateCountriesResponseElement"/></wsdl:message><wsdl:message name="deleteCountriesListRequest"><wsdl:part name="deleteCountriesListRequestPart" element="types:deleteCountriesListRequestElement"/></wsdl:message><wsdl:message name="deleteCountriesListResponse"><wsdl:part name="deleteCountriesListResponsePart" element="types:deleteCountriesListResponseElement"/></wsdl:message><wsdl:message name="deleteCountriesFilterRequest"><wsdl:part name="deleteCountriesFilterRequestPart" element="types:deleteCountriesFilterRequestElement"/></wsdl:message><wsdl:message name="deleteCountriesFilterResponse"><wsdl:part name="deleteCountriesFilterResponsePart" element="types:deleteCountriesFilterResponseElement"/></wsdl:message><wsdl:message name="getCountriesFilterRequest"><wsdl:part name="getCountriesFilterRequestPart" element="types:getCountriesFilterRequestElement"/></wsdl:message><wsdl:message name="getCountriesFilterResponse"><wsdl:part name="getCountriesFilterResponsePart" element="types:getCountriesFilterResponseElement"/></wsdl:message><wsdl:message name="updateCountriesListRequest"><wsdl:part name="updateCountriesListRequestPart" element="types:updateCountriesListRequestElement"/></wsdl:message><wsdl:message name="updateCountriesListResponse"><wsdl:part name="updateCountriesListResponsePart" element="types:updateCountriesListResponseElement"/></wsdl:message><wsdl:message name="updateCountriesFilterRequest"><wsdl:part name="updateCountriesFilterRequestPart" element="types:updateCountriesFilterRequestElement"/></wsdl:message><wsdl:message name="updateCountriesFilterResponse"><wsdl:part name="updateCountriesFilterResponsePart" element="types:updateCountriesFilterResponseElement"/></wsdl:message><wsdl:portType name="WSCountriesPortType"><wsdl:operation name="deleteCountries"><wsdl:input message="tns:deleteCountriesRequest"/><wsdl:output message="tns:deleteCountriesResponse"/></wsdl:operation><wsdl:operation name="getCountriesList"><wsdl:input message="tns:getCountriesListRequest"/><wsdl:output message="tns:getCountriesListResponse"/></wsdl:operation><wsdl:operation name="getCountries"><wsdl:input message="tns:getCountriesRequest"/><wsdl:output message="tns:getCountriesResponse"/></wsdl:operation><wsdl:operation name="addCountries"><wsdl:input message="tns:addCountriesRequest"/><wsdl:output message="tns:addCountriesResponse"/></wsdl:operation><wsdl:operation name="addCountriesList"><wsdl:input message="tns:addCountriesListRequest"/><wsdl:output message="tns:addCountriesListResponse"/></wsdl:operation><wsdl:operation name="updateCountries"><wsdl:input message="tns:updateCountriesRequest"/><wsdl:output message="tns:updateCountriesResponse"/></wsdl:operation><wsdl:operation name="deleteCountriesList"><wsdl:input message="tns:deleteCountriesListRequest"/><wsdl:output message="tns:deleteCountriesListResponse"/></wsdl:operation><wsdl:operation name="deleteCountriesFilter"><wsdl:input message="tns:deleteCountriesFilterRequest"/><wsdl:output message="tns:deleteCountriesFilterResponse"/></wsdl:operation><wsdl:operation name="getCountriesFilter"><wsdl:input message="tns:getCountriesFilterRequest"/><wsdl:output message="tns:getCountriesFilterResponse"/></wsdl:operation><wsdl:operation name="updateCountriesList"><wsdl:input message="tns:updateCountriesListRequest"/><wsdl:output message="tns:updateCountriesListResponse"/></wsdl:operation><wsdl:operation name="updateCountriesFilter"><wsdl:input message="tns:updateCountriesFilterRequest"/><wsdl:output message="tns:updateCountriesFilterResponse"/></wsdl:operation></wsdl:portType><wsdl:binding name="WSCountriesSoapBinding" type="tns:WSCountriesPortType"><soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/><wsdl:operation name="deleteCountries"><soap:operation soapAction="deleteCountries"/><wsdl:input><soap:body use="literal"/></wsdl:input><wsdl:output><soap:body use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="getCountriesList"><soap:operation soapAction="getCountriesList"/><wsdl:input><soap:body use="literal"/></wsdl:input><wsdl:output><soap:body use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="getCountries"><soap:operation soapAction="getCountries"/><wsdl:input><soap:body use="literal"/></wsdl:input><wsdl:output><soap:body use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="addCountries"><soap:operation soapAction="addCountries"/><wsdl:input><soap:body use="literal"/></wsdl:input><wsdl:output><soap:body use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="addCountriesList"><soap:operation soapAction="addCountriesList"/><wsdl:input><soap:body use="literal"/></wsdl:input><wsdl:output><soap:body use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="updateCountries"><soap:operation soapAction="updateCountries"/><wsdl:input><soap:body use="literal"/></wsdl:input><wsdl:output><soap:body use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="deleteCountriesList"><soap:operation soapAction="deleteCountriesList"/><wsdl:input><soap:body use="literal"/></wsdl:input><wsdl:output><soap:body use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="deleteCountriesFilter"><soap:operation soapAction="deleteCountriesFilter"/><wsdl:input><soap:body use="literal"/></wsdl:input><wsdl:output><soap:body use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="getCountriesFilter"><soap:operation soapAction="getCountriesFilter"/><wsdl:input><soap:body use="literal"/></wsdl:input><wsdl:output><soap:body use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="updateCountriesList"><soap:operation soapAction="updateCountriesList"/><wsdl:input><soap:body use="literal"/></wsdl:input><wsdl:output><soap:body use="literal"/></wsdl:output></wsdl:operation><wsdl:operation name="updateCountriesFilter"><soap:operation soapAction="updateCountriesFilter"/><wsdl:input><soap:body use="literal"/></wsdl:input><wsdl:output><soap:body use="literal"/></wsdl:output></wsdl:operation></wsdl:binding><wsdl:service name="WSCountries"><wsdl:port binding="tns:WSCountriesSoapBinding" name="WSCountriesSoapPort"><soap:address location="REPLACE_WITH_ACTUAL_URL"/></wsdl:port></wsdl:service></wsdl:definitions>]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpOrigTxt">
+		<Field name="GlobalId" type="java.lang.String">null</Field>
+	<Field name="ITxtOrig" type="com.sunopsis.sql.DbInt"><![CDATA[100]]></Field>
+	<Field name="OrigineName" type="java.lang.String"><![CDATA[WSDL for datastore]]></Field>
+	<Field name="SnpsCol" type="java.lang.String"><![CDATA[I_TXT_WSDL]]></Field>
+	<Field name="SnpsTable" type="java.lang.String"><![CDATA[SNP_TABLE]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpCol">
+		<Field name="Bytes" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="CheckFlow" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="CheckStat" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="ColDecSep" type="java.lang.String">null</Field>
+	<Field name="ColFormat" type="java.lang.String">null</Field>
+	<Field name="ColHeading" type="java.lang.String"><![CDATA[COUNTRY_ID]]></Field>
+	<Field name="ColMandatory" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="ColName" type="java.lang.String"><![CDATA[COUNTRY_ID]]></Field>
+	<Field name="ColNullIfErr" type="java.lang.String">null</Field>
+	<Field name="DataFormat" type="java.lang.String">null</Field>
+	<Field name="DefValue" type="java.lang.String">null</Field>
+	<Field name="ExtVersion" type="java.lang.String">null</Field>
+	<Field name="FilePos" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="FirstDate" type="java.sql.Timestamp"><![CDATA[2018-09-21 09:11:46.0]]></Field>
+	<Field name="FirstUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[6ad4d1cd-0090-466f-bc9d-75d07c78927c]]></Field>
+	<Field name="HbaseEncoding" type="java.lang.String">null</Field>
+	<Field name="HiveSortbyPos" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="IndHiveCluster" type="java.lang.String">null</Field>
+	<Field name="IndHivePartition" type="java.lang.String">null</Field>
+	<Field name="IndHiveSort" type="java.lang.String">null</Field>
+	<Field name="IndHiveSortbyAsc" type="java.lang.String">null</Field>
+	<Field name="IndIn" type="java.lang.String">null</Field>
+	<Field name="IndOut" type="java.lang.String">null</Field>
+	<Field name="IndWrite" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IndWsInsert" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IndWsSelect" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IndWsUpdate" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IntVersion" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="ICol" type="com.sunopsis.sql.DbInt"><![CDATA[3]]></Field>
+	<Field name="ISrcCol" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITable" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="ITxtColDesc" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2018-09-21 09:11:46.0]]></Field>
+	<Field name="LastUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="Longc" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="Pos" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="RecCodeList" type="java.lang.String">null</Field>
+	<Field name="Scalec" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ScdColType" type="java.lang.String">null</Field>
+	<Field name="SourceDt" type="java.lang.String"><![CDATA[CHAR]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpCol">
+		<Field name="Bytes" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="CheckFlow" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="CheckStat" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="ColDecSep" type="java.lang.String">null</Field>
+	<Field name="ColFormat" type="java.lang.String">null</Field>
+	<Field name="ColHeading" type="java.lang.String"><![CDATA[COUNTRY_NAME]]></Field>
+	<Field name="ColMandatory" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="ColName" type="java.lang.String"><![CDATA[COUNTRY_NAME]]></Field>
+	<Field name="ColNullIfErr" type="java.lang.String">null</Field>
+	<Field name="DataFormat" type="java.lang.String">null</Field>
+	<Field name="DefValue" type="java.lang.String">null</Field>
+	<Field name="ExtVersion" type="java.lang.String">null</Field>
+	<Field name="FilePos" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="FirstDate" type="java.sql.Timestamp"><![CDATA[2018-09-21 09:11:46.0]]></Field>
+	<Field name="FirstUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[a9fcf44b-fe4e-4b51-9c7b-0e3e63d8be6f]]></Field>
+	<Field name="HbaseEncoding" type="java.lang.String">null</Field>
+	<Field name="HiveSortbyPos" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="IndHiveCluster" type="java.lang.String">null</Field>
+	<Field name="IndHivePartition" type="java.lang.String">null</Field>
+	<Field name="IndHiveSort" type="java.lang.String">null</Field>
+	<Field name="IndHiveSortbyAsc" type="java.lang.String">null</Field>
+	<Field name="IndIn" type="java.lang.String">null</Field>
+	<Field name="IndOut" type="java.lang.String">null</Field>
+	<Field name="IndWrite" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IndWsInsert" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IndWsSelect" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IndWsUpdate" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IntVersion" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="ICol" type="com.sunopsis.sql.DbInt"><![CDATA[4]]></Field>
+	<Field name="ISrcCol" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITable" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="ITxtColDesc" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2018-09-21 09:11:46.0]]></Field>
+	<Field name="LastUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="Longc" type="com.sunopsis.sql.DbInt"><![CDATA[40]]></Field>
+	<Field name="Pos" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="RecCodeList" type="java.lang.String">null</Field>
+	<Field name="Scalec" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ScdColType" type="java.lang.String">null</Field>
+	<Field name="SourceDt" type="java.lang.String"><![CDATA[VARCHAR2]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpCol">
+		<Field name="Bytes" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="CheckFlow" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="CheckStat" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="ColDecSep" type="java.lang.String">null</Field>
+	<Field name="ColFormat" type="java.lang.String">null</Field>
+	<Field name="ColHeading" type="java.lang.String"><![CDATA[REGION_ID]]></Field>
+	<Field name="ColMandatory" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="ColName" type="java.lang.String"><![CDATA[REGION_ID]]></Field>
+	<Field name="ColNullIfErr" type="java.lang.String">null</Field>
+	<Field name="DataFormat" type="java.lang.String">null</Field>
+	<Field name="DefValue" type="java.lang.String">null</Field>
+	<Field name="ExtVersion" type="java.lang.String">null</Field>
+	<Field name="FilePos" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="FirstDate" type="java.sql.Timestamp"><![CDATA[2018-09-21 09:11:46.0]]></Field>
+	<Field name="FirstUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[3ec8fc19-5264-4762-a215-8800f2f66482]]></Field>
+	<Field name="HbaseEncoding" type="java.lang.String">null</Field>
+	<Field name="HiveSortbyPos" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="IndHiveCluster" type="java.lang.String">null</Field>
+	<Field name="IndHivePartition" type="java.lang.String">null</Field>
+	<Field name="IndHiveSort" type="java.lang.String">null</Field>
+	<Field name="IndHiveSortbyAsc" type="java.lang.String">null</Field>
+	<Field name="IndIn" type="java.lang.String">null</Field>
+	<Field name="IndOut" type="java.lang.String">null</Field>
+	<Field name="IndWrite" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IndWsInsert" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IndWsSelect" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IndWsUpdate" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IntVersion" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="ICol" type="com.sunopsis.sql.DbInt"><![CDATA[5]]></Field>
+	<Field name="ISrcCol" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITable" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="ITxtColDesc" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2018-09-21 09:11:46.0]]></Field>
+	<Field name="LastUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="Longc" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="Pos" type="com.sunopsis.sql.DbInt"><![CDATA[3]]></Field>
+	<Field name="RecCodeList" type="java.lang.String">null</Field>
+	<Field name="Scalec" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ScdColType" type="java.lang.String">null</Field>
+	<Field name="SourceDt" type="java.lang.String"><![CDATA[NUMBER]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpKey">
+		<Field name="CheckFlow" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="CheckStat" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="ConsType" type="java.lang.String"><![CDATA[PK]]></Field>
+	<Field name="ExtVersion" type="java.lang.String">null</Field>
+	<Field name="FirstDate" type="java.sql.Timestamp"><![CDATA[2018-09-21 09:11:46.0]]></Field>
+	<Field name="FirstUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[4dc79671-31ef-4246-a09c-97dcc54a707c]]></Field>
+	<Field name="IndActive" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[U]]></Field>
+	<Field name="IndDb" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IntVersion" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="IKey" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="ITable" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="KeyName" type="java.lang.String"><![CDATA[COUNTRY_C_ID_PK]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2018-09-21 09:11:46.0]]></Field>
+	<Field name="LastUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpKeyCol">
+		<Field name="FirstDate" type="java.sql.Timestamp"><![CDATA[2018-09-21 09:11:46.0]]></Field>
+	<Field name="FirstUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[23c231b7-77a7-45ef-8b46-605d012fbba2]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="IntVersion" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="ICol" type="com.sunopsis.sql.DbInt"><![CDATA[3]]></Field>
+	<Field name="IKey" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2018-09-21 09:11:46.0]]></Field>
+	<Field name="LastUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="Pos" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpReferencedObject">
+		<Field name="IObject" type="com.sunopsis.sql.DbInt"><![CDATA[2600]]></Field>
+	<Field name="ObjectPKasString" type="java.lang.String"><![CDATA[3]]></Field>
+	<Field name="ObjectAKasString" type="java.lang.String"><![CDATA[2#COUNTRY_ID]]></Field>
+	<Field name="Description" type="java.lang.String"><![CDATA[SNP_MODFOLDER : ODI_DB #SNP_MODEL : ODI_STG_DB #SNP_SUBMODEL : Global #SNP_TABLE : COUNTRIES #SNP_COL : COUNTRY_ID]]></Field>
+ <Field name="GlobalId" type="java.lang.String"><![CDATA[6ad4d1cd-0090-466f-bc9d-75d07c78927c]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpJoin">
+		<Field name="CheckFlow" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="CheckStat" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="Defer" type="java.lang.String">null</Field>
+	<Field name="DelRule" type="java.lang.String"><![CDATA[R]]></Field>
+	<Field name="ExtVersion" type="java.lang.String">null</Field>
+	<Field name="FirstDate" type="java.sql.Timestamp"><![CDATA[2018-09-21 09:11:48.0]]></Field>
+	<Field name="FirstUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="FkName" type="java.lang.String"><![CDATA[COUNTR_REG_FK]]></Field>
+	<Field name="FkType" type="java.lang.String"><![CDATA[D]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[b305fa2a-ef45-4c8e-8a25-a3fe8d037f04]]></Field>
+	<Field name="IndActive" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[U]]></Field>
+	<Field name="IntVersion" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="IJoin" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="IScTablePk" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITableFk" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="ITablePk" type="com.sunopsis.sql.DbInt"><![CDATA[8]]></Field>
+	<Field name="ITxtComplex" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2018-09-27 01:19:42.0]]></Field>
+	<Field name="LastUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="PkCatalog" type="java.lang.String">null</Field>
+	<Field name="PkIMod" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="PkSchema" type="java.lang.String"><![CDATA[ODI_STAGE]]></Field>
+	<Field name="PkTableAlias" type="java.lang.String"><![CDATA[REGIONS]]></Field>
+	<Field name="PkTableName" type="java.lang.String"><![CDATA[REGIONS]]></Field>
+	<Field name="UpdRule" type="java.lang.String"><![CDATA[C]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpReferencedObject">
+		<Field name="IObject" type="com.sunopsis.sql.DbInt"><![CDATA[2400]]></Field>
+	<Field name="ObjectPKasString" type="java.lang.String"><![CDATA[8]]></Field>
+	<Field name="ObjectAKasString" type="java.lang.String"><![CDATA[1#REGIONS]]></Field>
+	<Field name="Description" type="java.lang.String"><![CDATA[SNP_MODFOLDER : ODI_DB #SNP_MODEL : ODI_STG_DB #SNP_SUBMODEL : Global #SNP_TABLE : REGIONS]]></Field>
+ <Field name="GlobalId" type="java.lang.String"><![CDATA[fe287530-7c52-4585-a4c0-ceadb52a4076]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpJoinCol">
+		<Field name="FirstDate" type="java.sql.Timestamp"><![CDATA[2018-09-21 09:11:48.0]]></Field>
+	<Field name="FirstUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[a8423492-8a7b-4270-96cd-7e03a96836cf]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[U]]></Field>
+	<Field name="IntVersion" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="IColFk" type="com.sunopsis.sql.DbInt"><![CDATA[5]]></Field>
+	<Field name="IColPk" type="com.sunopsis.sql.DbInt"><![CDATA[36]]></Field>
+	<Field name="IJoin" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2018-09-27 01:19:42.0]]></Field>
+	<Field name="LastUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="PkColName" type="java.lang.String"><![CDATA[REGION_ID]]></Field>
+	<Field name="Pos" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpReferencedObject">
+		<Field name="IObject" type="com.sunopsis.sql.DbInt"><![CDATA[2600]]></Field>
+	<Field name="ObjectPKasString" type="java.lang.String"><![CDATA[36]]></Field>
+	<Field name="ObjectAKasString" type="java.lang.String"><![CDATA[8#REGION_ID]]></Field>
+	<Field name="Description" type="java.lang.String"><![CDATA[SNP_MODFOLDER : ODI_DB #SNP_MODEL : ODI_STG_DB #SNP_SUBMODEL : Global #SNP_TABLE : REGIONS #SNP_COL : REGION_ID]]></Field>
+ <Field name="GlobalId" type="java.lang.String"><![CDATA[c23f943d-4f7e-425d-9d3c-c91c5bd333a6]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpReferencedObject">
+		<Field name="IObject" type="com.sunopsis.sql.DbInt"><![CDATA[2600]]></Field>
+	<Field name="ObjectPKasString" type="java.lang.String"><![CDATA[5]]></Field>
+	<Field name="ObjectAKasString" type="java.lang.String"><![CDATA[2#REGION_ID]]></Field>
+	<Field name="Description" type="java.lang.String"><![CDATA[SNP_MODFOLDER : ODI_DB #SNP_MODEL : ODI_STG_DB #SNP_SUBMODEL : Global #SNP_TABLE : COUNTRIES #SNP_COL : REGION_ID]]></Field>
+ <Field name="GlobalId" type="java.lang.String"><![CDATA[3ec8fc19-5264-4762-a215-8800f2f66482]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_SUBMODEL.1.2]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[f590879b-eea3-49a1-904f-c890724ca9f0]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[ODI_DB.ODI_STG_DB.Global]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_MODFOLDER.SNP_MODEL.SNP_SUBMODEL]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[6.10.6]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TXTHEADER.1192]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[aa4dbe89-b311-4f79-8e3c-a29bf0319a37]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String">null</Field>
+ <Field name="RefObjFQType" type="java.lang.String">null</Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TABLE.2]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[afd8dcf1-2541-47b6-af85-1b0cdf2cf4b6]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[ODI_DB.ODI_STG_DB.Global.COUNTRIES]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_MODFOLDER.SNP_MODEL.SNP_SUBMODEL.SNP_TABLE]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[6.10.6.9]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_KEY.1]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[4dc79671-31ef-4246-a09c-97dcc54a707c]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[ODI_DB.ODI_STG_DB.Global.COUNTRIES.COUNTRY_C_ID_PK]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_MODFOLDER.SNP_MODEL.SNP_SUBMODEL.SNP_TABLE.SNP_KEY]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[6.10.6.9.15]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_COL.3]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[6ad4d1cd-0090-466f-bc9d-75d07c78927c]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[ODI_DB.ODI_STG_DB.Global.COUNTRIES.COUNTRY_ID]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_MODFOLDER.SNP_MODEL.SNP_SUBMODEL.SNP_TABLE.SNP_COL]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[6.10.6.9.10]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TABLE.8]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[fe287530-7c52-4585-a4c0-ceadb52a4076]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[ODI_DB.ODI_STG_DB.Global.REGIONS]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_MODFOLDER.SNP_MODEL.SNP_SUBMODEL.SNP_TABLE]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[6.10.6.7]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TABLE.8]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[fe287530-7c52-4585-a4c0-ceadb52a4076]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[ODI_DB.ODI_STG_DB.Global.REGIONS]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_MODFOLDER.SNP_MODEL.SNP_SUBMODEL.SNP_TABLE]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[6.10.6.7]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_MODEL.1]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[4c893e82-d48e-45f4-a245-1500baa00c2e]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[ODI_DB.ODI_STG_DB]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_MODFOLDER.SNP_MODEL]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[6.10]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_JOIN.1]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[b305fa2a-ef45-4c8e-8a25-a3fe8d037f04]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[ODI_DB.ODI_STG_DB.Global.COUNTRIES.COUNTR_REG_FK]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_MODFOLDER.SNP_MODEL.SNP_SUBMODEL.SNP_TABLE.SNP_JOIN]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[6.10.6.9.13]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_COL.5]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[3ec8fc19-5264-4762-a215-8800f2f66482]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[ODI_DB.ODI_STG_DB.Global.COUNTRIES.REGION_ID]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_MODFOLDER.SNP_MODEL.SNP_SUBMODEL.SNP_TABLE.SNP_COL]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[6.10.6.9.9]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_COL.36]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[c23f943d-4f7e-425d-9d3c-c91c5bd333a6]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[ODI_DB.ODI_STG_DB.Global.REGIONS.REGION_ID]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_MODFOLDER.SNP_MODEL.SNP_SUBMODEL.SNP_TABLE.SNP_COL]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[6.10.6.7.9]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.DwgExportSummary">
+		<Field name="ExpTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="InstObjNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="JoinColNb" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="JoinNb" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="KeyColNb" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="KeyNb" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="LinkDiagNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="MorigTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="MtxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="OrigTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="OtherObjectsNb" type="com.sunopsis.sql.DbInt"><![CDATA[4]]></Field>
+	<Field name="PlanAgentNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="StepNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="TxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="UeOrigNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="UeUsedNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="VarPlanAgentNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="ScenTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="OdiVersion" type="java.lang.String"><![CDATA[12.2.1]]></Field>
+	<Field name="OriginRepositoryID" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="RepositoryVersion" type="java.lang.String"><![CDATA[05.02.02.07]]></Field>
+</Object>
+</SunopsisExport>
