@@ -1,0 +1,1767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SunopsisExport>
+<Admin RepositoryVersion="05.02.02.07" IsLegacyIdCompatible="false" />
+<Encryption algorithm="AES" keyLength="128" exportKeyHash="" keyVect="rltANRdQgAKTq+K/sY0cYg==" exportKeySalt="9c3e3e04-3864-4b62-a11c-c26905d68a47" containsCipherText="false"/>
+<Object class="com.sunopsis.dwg.dbobj.SnpScen">
+		<Field name="CecSessBehavior" type="java.lang.String">null</Field>
+	<Field name="CecSessPollIntv" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ExtVersion" type="java.lang.String">null</Field>
+	<Field name="FirstDate" type="java.sql.Timestamp"><![CDATA[2018-09-26 09:22:35.0]]></Field>
+	<Field name="FirstUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[2783da59-71b1-46c8-813d-67905acbbdbc]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[U]]></Field>
+	<Field name="IndPromptParam" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IntVersion" type="com.sunopsis.sql.DbInt"><![CDATA[3]]></Field>
+	<Field name="IsMaterialized" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IDeploySpec" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IMapping" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IPackage" type="com.sunopsis.sql.DbInt"><![CDATA[11]]></Field>
+	<Field name="IPop" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IScenFolder" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtScen" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IVar" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2018-09-26 23:25:03.0]]></Field>
+	<Field name="LastUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="MaxCecSess" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="RepGuid" type="java.lang.String">null</Field>
+	<Field name="RepVersion" type="java.lang.String">null</Field>
+	<Field name="RestartType" type="java.lang.String">null</Field>
+	<Field name="ScenName" type="java.lang.String"><![CDATA[FILE_PKG]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenSnapshotNo" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="ScenVersion" type="java.lang.String"><![CDATA[001]]></Field>
+	<Field name="VLastDate" type="java.sql.Timestamp">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpScenReport">
+		<Field name="AgentName" type="java.lang.String"><![CDATA[Internal]]></Field>
+	<Field name="ContextCode" type="java.lang.String"><![CDATA[GLOBAL]]></Field>
+	<Field name="ErrorMessage" type="java.lang.String"><![CDATA[ODI-1217: Session FILE_PKG (89) fails with return code ODI-1298.
+ODI-1226: Step FIXED_FILE_MAP fails after 1 attempt(s).
+ODI-1227: Task SERIAL-MAP_MAIN- fails on the source connection <Empty Value>.
+ODI-1298: Serial task "SERIAL-MAP_MAIN- (10)" failed because child task "SERIAL-EU-FILE_CSV_LS_UNIT (20)" is in error.
+ODI-1298: Serial task "SERIAL-EU-FILE_CSV_LS_UNIT (20)" failed because child task "Load data-LKM File to SQL- (50)" is in error.
+ODI-1227: Task Load data-LKM File to SQL- fails on the source connection FILE_CSV.
+Caused By: java.sql.SQLException: ODI-40438: File not found: C:\Users\Uttam Suthar\Desktop\ODI_Training\Files/ABC.csv
+	at com.sunopsis.jdbc.driver.file.FileResultSet.<init>(FileResultSet.java:156)
+	at com.sunopsis.jdbc.driver.file.impl.commands.CommandSelect.execute(CommandSelect.java:57)
+	at com.sunopsis.jdbc.driver.file.CommandExecutor.executeCommand(CommandExecutor.java:34)
+	at com.sunopsis.jdbc.driver.file.FilePreparedStatement.executeQuery(FilePreparedStatement.java:134)
+	at oracle.odi.query.JDBCTemplate.executeQuery(JDBCTemplate.java:194)
+	at oracle.odi.query.JDBCTemplate.executeQuery(JDBCTemplate.java:204)
+	at oracle.odi.runtime.agent.execution.sql.SQLDataProvider.readData(SQLDataProvider.java:100)
+	at oracle.odi.runtime.agent.execution.sql.SQLDataProvider.readData(SQLDataProvider.java:38)
+	at oracle.odi.runtime.agent.execution.Executor.handleDataMovementTask(Executor.java:309)
+	at oracle.odi.runtime.agent.execution.DataMovementTaskExecutionHandler.handleTask(DataMovementTaskExecutionHandler.java:51)
+	at oracle.odi.runtime.agent.execution.SessionTask.processTask(SessionTask.java:206)
+	at oracle.odi.runtime.agent.execution.SessionTask.doExecuteTask(SessionTask.java:117)
+	at oracle.odi.runtime.agent.execution.AbstractSessionTask.execute(AbstractSessionTask.java:886)
+	at oracle.odi.runtime.agent.execution.SessionExecutor$SerialTrain.runTasks(SessionExecutor.java:2225)
+	at oracle.odi.runtime.agent.execution.SessionExecutor.executeSession(SessionExecutor.java:610)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor$1.doAction(TaskExecutorAgentRequestProcessor.java:718)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor$1.doAction(TaskExecutorAgentRequestProcessor.java:611)
+	at oracle.odi.core.persistence.dwgobject.DwgObjectTemplate.execute(DwgObjectTemplate.java:203)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.doProcessStartAgentTask(TaskExecutorAgentRequestProcessor.java:800)
+	at oracle.odi.runtime.agent.processor.impl.StartScenRequestProcessor.access$2700(StartScenRequestProcessor.java:85)
+	at oracle.odi.runtime.agent.processor.impl.StartScenRequestProcessor$StartScenTask.doExecute(StartScenRequestProcessor.java:917)
+	at oracle.odi.runtime.agent.processor.task.AgentTask.execute(AgentTask.java:180)
+	at oracle.odi.runtime.agent.support.DefaultAgentTaskExecutor$2.run(DefaultAgentTaskExecutor.java:108)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.FileNotFoundException: C:\Users\Uttam Suthar\Desktop\ODI_Training\Files\ABC.csv (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.sunopsis.jdbc.driver.file.util.SnpsStreamTools.getInputStream(SnpsStreamTools.java:33)
+	at com.sunopsis.jdbc.driver.file.FileResultSet.<init>(FileResultSet.java:75)
+	... 23 more
+]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[93d3e778-43f8-4564-a0bf-b16b5d6904ee]]></Field>
+	<Field name="ITxtSessMess" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="NbDel" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbErr" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbIns" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbMrg" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="NbRow" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbUpd" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenRunNo" type="com.sunopsis.sql.DbInt"><![CDATA[89]]></Field>
+	<Field name="SessBeg" type="java.sql.Timestamp"><![CDATA[2018-09-26 09:23:03.0]]></Field>
+	<Field name="SessDur" type="com.sunopsis.sql.DbFloat"><![CDATA[0]]></Field>
+	<Field name="SessEnd" type="java.sql.Timestamp"><![CDATA[2018-09-26 09:23:03.0]]></Field>
+	<Field name="SessRc" type="java.lang.String"><![CDATA[ODI-1298]]></Field>
+	<Field name="SessStatus" type="java.lang.String"><![CDATA[E]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpStepReport">
+		<Field name="ContextCode" type="java.lang.String">null</Field>
+	<Field name="ErrorMessage" type="java.lang.String">null</Field>
+	<Field name="ExecutionOrder" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="FContextCode" type="java.lang.String"><![CDATA[GLOBAL]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[ae52ffbd-ad53-48a7-9bfb-d9f6689b0608]]></Field>
+	<Field name="IStep" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtStepMess" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="LschemaName" type="java.lang.String">null</Field>
+	<Field name="ModCode" type="java.lang.String">null</Field>
+	<Field name="NbDel" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbErr" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbIns" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbMrg" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="NbRow" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbRun" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="NbUpd" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="ResName" type="java.lang.String">null</Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenRunNo" type="com.sunopsis.sql.DbInt"><![CDATA[89]]></Field>
+	<Field name="StepBeg" type="java.sql.Timestamp"><![CDATA[2018-09-26 09:23:03.0]]></Field>
+	<Field name="StepDur" type="com.sunopsis.sql.DbFloat"><![CDATA[0]]></Field>
+	<Field name="StepEnd" type="java.sql.Timestamp"><![CDATA[2018-09-26 09:23:03.0]]></Field>
+	<Field name="StepName" type="java.lang.String"><![CDATA[V_INP_FILE]]></Field>
+	<Field name="StepRc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="StepStatus" type="java.lang.String"><![CDATA[D]]></Field>
+	<Field name="TableName" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpStepReport">
+		<Field name="ContextCode" type="java.lang.String">null</Field>
+	<Field name="ErrorMessage" type="java.lang.String"><![CDATA[ODI-1226: Step FIXED_FILE_MAP fails after 1 attempt(s).
+ODI-1227: Task SERIAL-MAP_MAIN- fails on the source connection <Empty Value>.
+ODI-1298: Serial task "SERIAL-MAP_MAIN- (10)" failed because child task "SERIAL-EU-FILE_CSV_LS_UNIT (20)" is in error.
+ODI-1298: Serial task "SERIAL-EU-FILE_CSV_LS_UNIT (20)" failed because child task "Load data-LKM File to SQL- (50)" is in error.
+ODI-1227: Task Load data-LKM File to SQL- fails on the source connection FILE_CSV.
+Caused By: java.sql.SQLException: ODI-40438: File not found: C:\Users\Uttam Suthar\Desktop\ODI_Training\Files/ABC.csv
+	at com.sunopsis.jdbc.driver.file.FileResultSet.<init>(FileResultSet.java:156)
+	at com.sunopsis.jdbc.driver.file.impl.commands.CommandSelect.execute(CommandSelect.java:57)
+	at com.sunopsis.jdbc.driver.file.CommandExecutor.executeCommand(CommandExecutor.java:34)
+	at com.sunopsis.jdbc.driver.file.FilePreparedStatement.executeQuery(FilePreparedStatement.java:134)
+	at oracle.odi.query.JDBCTemplate.executeQuery(JDBCTemplate.java:194)
+	at oracle.odi.query.JDBCTemplate.executeQuery(JDBCTemplate.java:204)
+	at oracle.odi.runtime.agent.execution.sql.SQLDataProvider.readData(SQLDataProvider.java:100)
+	at oracle.odi.runtime.agent.execution.sql.SQLDataProvider.readData(SQLDataProvider.java:38)
+	at oracle.odi.runtime.agent.execution.Executor.handleDataMovementTask(Executor.java:309)
+	at oracle.odi.runtime.agent.execution.DataMovementTaskExecutionHandler.handleTask(DataMovementTaskExecutionHandler.java:51)
+	at oracle.odi.runtime.agent.execution.SessionTask.processTask(SessionTask.java:206)
+	at oracle.odi.runtime.agent.execution.SessionTask.doExecuteTask(SessionTask.java:117)
+	at oracle.odi.runtime.agent.execution.AbstractSessionTask.execute(AbstractSessionTask.java:886)
+	at oracle.odi.runtime.agent.execution.SessionExecutor$SerialTrain.runTasks(SessionExecutor.java:2225)
+	at oracle.odi.runtime.agent.execution.SessionExecutor.executeSession(SessionExecutor.java:610)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor$1.doAction(TaskExecutorAgentRequestProcessor.java:718)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor$1.doAction(TaskExecutorAgentRequestProcessor.java:611)
+	at oracle.odi.core.persistence.dwgobject.DwgObjectTemplate.execute(DwgObjectTemplate.java:203)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.doProcessStartAgentTask(TaskExecutorAgentRequestProcessor.java:800)
+	at oracle.odi.runtime.agent.processor.impl.StartScenRequestProcessor.access$2700(StartScenRequestProcessor.java:85)
+	at oracle.odi.runtime.agent.processor.impl.StartScenRequestProcessor$StartScenTask.doExecute(StartScenRequestProcessor.java:917)
+	at oracle.odi.runtime.agent.processor.task.AgentTask.execute(AgentTask.java:180)
+	at oracle.odi.runtime.agent.support.DefaultAgentTaskExecutor$2.run(DefaultAgentTaskExecutor.java:108)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.FileNotFoundException: C:\Users\Uttam Suthar\Desktop\ODI_Training\Files\ABC.csv (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.sunopsis.jdbc.driver.file.util.SnpsStreamTools.getInputStream(SnpsStreamTools.java:33)
+	at com.sunopsis.jdbc.driver.file.FileResultSet.<init>(FileResultSet.java:75)
+	... 23 more
+]]></Field>
+	<Field name="ExecutionOrder" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="FContextCode" type="java.lang.String"><![CDATA[GLOBAL]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[1d9dd374-2276-42e7-bdaf-bb620a682e84]]></Field>
+	<Field name="IStep" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtStepMess" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="LschemaName" type="java.lang.String"><![CDATA[DB_ODS_LS]]></Field>
+	<Field name="ModCode" type="java.lang.String"><![CDATA[ODS_DB]]></Field>
+	<Field name="NbDel" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbErr" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbIns" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbMrg" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="NbRow" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbRun" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="NbUpd" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="ResName" type="java.lang.String"><![CDATA[ABC_TEMP]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenRunNo" type="com.sunopsis.sql.DbInt"><![CDATA[89]]></Field>
+	<Field name="StepBeg" type="java.sql.Timestamp"><![CDATA[2018-09-26 09:23:03.0]]></Field>
+	<Field name="StepDur" type="com.sunopsis.sql.DbFloat"><![CDATA[0]]></Field>
+	<Field name="StepEnd" type="java.sql.Timestamp"><![CDATA[2018-09-26 09:23:03.0]]></Field>
+	<Field name="StepName" type="java.lang.String"><![CDATA[FIXED_FILE_MAP]]></Field>
+	<Field name="StepRc" type="java.lang.String"><![CDATA[ODI-1298]]></Field>
+	<Field name="StepStatus" type="java.lang.String"><![CDATA[E]]></Field>
+	<Field name="TableName" type="java.lang.String"><![CDATA[ABC_TEMP]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpScenReport">
+		<Field name="AgentName" type="java.lang.String"><![CDATA[OracleDIAgent]]></Field>
+	<Field name="ContextCode" type="java.lang.String"><![CDATA[DEV]]></Field>
+	<Field name="ErrorMessage" type="java.lang.String"><![CDATA[ODI-1217: Session ? (134) fails with return code ODI-1298.
+ODI-1226: Step FIXED_FILE_MAP fails after 1 attempt(s).
+ODI-1227: Task SERIAL-MAP_MAIN- fails on the source connection <Empty Value>.
+ODI-1298: Serial task "SERIAL-MAP_MAIN- (10)" failed because child task "SERIAL-EU-FILE_CSV_LS_UNIT (20)" is in error.
+ODI-1298: Serial task "SERIAL-EU-FILE_CSV_LS_UNIT (20)" failed because child task "Load data-LKM File to SQL- (50)" is in error.
+ODI-1227: Task Load data-LKM File to SQL- fails on the source connection FILE_CSV.
+Caused By: java.sql.SQLException: ODI-40438: File not found: C:\Users\Uttam Suthar\Desktop\ODI_Training\Files//app01
+	at com.sunopsis.jdbc.driver.file.FileResultSet.<init>(FileResultSet.java:156)
+	at com.sunopsis.jdbc.driver.file.impl.commands.CommandSelect.execute(CommandSelect.java:57)
+	at com.sunopsis.jdbc.driver.file.CommandExecutor.executeCommand(CommandExecutor.java:34)
+	at com.sunopsis.jdbc.driver.file.FilePreparedStatement.executeQuery(FilePreparedStatement.java:134)
+	at oracle.odi.query.JDBCTemplate.executeQuery(JDBCTemplate.java:194)
+	at oracle.odi.query.JDBCTemplate.executeQuery(JDBCTemplate.java:204)
+	at oracle.odi.runtime.agent.execution.sql.SQLDataProvider.readData(SQLDataProvider.java:100)
+	at oracle.odi.runtime.agent.execution.sql.SQLDataProvider.readData(SQLDataProvider.java:38)
+	at oracle.odi.runtime.agent.execution.Executor.handleDataMovementTask(Executor.java:309)
+	at oracle.odi.runtime.agent.execution.DataMovementTaskExecutionHandler.handleTask(DataMovementTaskExecutionHandler.java:51)
+	at oracle.odi.runtime.agent.execution.SessionTask.processTask(SessionTask.java:206)
+	at oracle.odi.runtime.agent.execution.SessionTask.doExecuteTask(SessionTask.java:117)
+	at oracle.odi.runtime.agent.execution.AbstractSessionTask.execute(AbstractSessionTask.java:886)
+	at oracle.odi.runtime.agent.execution.SessionExecutor$SerialTrain.runTasks(SessionExecutor.java:2225)
+	at oracle.odi.runtime.agent.execution.SessionExecutor.executeSession(SessionExecutor.java:610)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor$1.doAction(TaskExecutorAgentRequestProcessor.java:718)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor$1.doAction(TaskExecutorAgentRequestProcessor.java:611)
+	at oracle.odi.core.persistence.dwgobject.DwgObjectTemplate.execute(DwgObjectTemplate.java:203)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.doProcessStartAgentTask(TaskExecutorAgentRequestProcessor.java:800)
+	at oracle.odi.runtime.agent.processor.impl.StartScenRequestProcessor.access$2700(StartScenRequestProcessor.java:85)
+	at oracle.odi.runtime.agent.processor.impl.StartScenRequestProcessor$StartScenTask.doExecute(StartScenRequestProcessor.java:917)
+	at oracle.odi.runtime.agent.processor.task.AgentTask.execute(AgentTask.java:180)
+	at oracle.odi.runtime.agent.support.DefaultAgentTaskExecutor$1.run(DefaultAgentTaskExecutor.java:66)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at oracle.odi.runtime.agent.support.DefaultAgentTaskExecutor.executeAgentTask(DefaultAgentTaskExecutor.java:76)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.doExecuteAgentTask(TaskExecutorAgentRequestProcessor.java:146)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.process(TaskExecutorAgentRequestProcessor.java:137)
+	at oracle.odi.runtime.agent.support.DefaultRuntimeAgent.execute(DefaultRuntimeAgent.java:79)
+	at oracle.odi.pubws.jaxws.service.OdiInvokeServiceImpl.doInvokeStartScen(OdiInvokeServiceImpl.java:420)
+	at oracle.odi.pubws.jaxws.service.OdiInvokeServiceImpl.invokeStartScen(OdiInvokeServiceImpl.java:366)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:120)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:93)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:149)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:88)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:1136)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:1050)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:1019)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:877)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:419)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:868)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:422)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:169)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:246)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:667)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:368)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:163)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:108)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:286)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:295)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:128)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:103)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:286)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:260)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:137)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:350)
+	at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:25)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at oracle.security.jps.ee.http.JpsAbsFilter$3.run(JpsAbsFilter.java:172)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at oracle.security.jps.util.JpsSubject.doAsPrivileged(JpsSubject.java:315)
+	at oracle.security.jps.ee.util.JpsPlatformUtil.runJaasMode(JpsPlatformUtil.java:650)
+	at oracle.security.jps.ee.http.JpsAbsFilter.runJaasMode(JpsAbsFilter.java:110)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilterInternal(JpsAbsFilter.java:273)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilter(JpsAbsFilter.java:147)
+	at oracle.security.jps.ee.http.JpsFilter.doFilter(JpsFilter.java:94)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at oracle.security.jps.ee.http.JpsAbsFilter$3.run(JpsAbsFilter.java:172)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at oracle.security.jps.util.JpsSubject.doAsPrivileged(JpsSubject.java:315)
+	at oracle.security.jps.ee.util.JpsPlatformUtil.runJaasMode(JpsPlatformUtil.java:650)
+	at oracle.security.jps.ee.http.JpsAbsFilter.runJaasMode(JpsAbsFilter.java:110)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilterInternal(JpsAbsFilter.java:273)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilter(JpsAbsFilter.java:147)
+	at oracle.security.jps.ee.http.JpsFilter.doFilter(JpsFilter.java:94)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at oracle.dms.servlet.DMSServletFilter.doFilter(DMSServletFilter.java:248)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3701)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3667)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:326)
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197)
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203)
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71)
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2443)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2291)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2269)
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1703)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1663)
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272)
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352)
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337)
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57)
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41)
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:644)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:415)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:355)
+Caused by: java.io.FileNotFoundException: C:\Users\Uttam Suthar\Desktop\ODI_Training\Files\app01 (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.sunopsis.jdbc.driver.file.util.SnpsStreamTools.getInputStream(SnpsStreamTools.java:33)
+	at com.sunopsis.jdbc.driver.file.FileResultSet.<init>(FileResultSet.java:75)
+	... 100 more
+]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[98d12fdf-4f2c-4e75-a2b7-698fc86a37c5]]></Field>
+	<Field name="ITxtSessMess" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="NbDel" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbErr" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbIns" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbMrg" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="NbRow" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbUpd" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenRunNo" type="com.sunopsis.sql.DbInt"><![CDATA[134]]></Field>
+	<Field name="SessBeg" type="java.sql.Timestamp"><![CDATA[2018-09-26 22:47:35.0]]></Field>
+	<Field name="SessDur" type="com.sunopsis.sql.DbFloat"><![CDATA[1]]></Field>
+	<Field name="SessEnd" type="java.sql.Timestamp"><![CDATA[2018-09-26 22:47:36.0]]></Field>
+	<Field name="SessRc" type="java.lang.String"><![CDATA[ODI-1298]]></Field>
+	<Field name="SessStatus" type="java.lang.String"><![CDATA[E]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpStepReport">
+		<Field name="ContextCode" type="java.lang.String">null</Field>
+	<Field name="ErrorMessage" type="java.lang.String">null</Field>
+	<Field name="ExecutionOrder" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="FContextCode" type="java.lang.String"><![CDATA[DEV]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[aed016f3-d769-4000-ae36-ed4bceb4d9f8]]></Field>
+	<Field name="IStep" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtStepMess" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="LschemaName" type="java.lang.String">null</Field>
+	<Field name="ModCode" type="java.lang.String">null</Field>
+	<Field name="NbDel" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbErr" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbIns" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbMrg" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="NbRow" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbRun" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="NbUpd" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="ResName" type="java.lang.String">null</Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenRunNo" type="com.sunopsis.sql.DbInt"><![CDATA[134]]></Field>
+	<Field name="StepBeg" type="java.sql.Timestamp"><![CDATA[2018-09-26 22:47:35.0]]></Field>
+	<Field name="StepDur" type="com.sunopsis.sql.DbFloat"><![CDATA[0]]></Field>
+	<Field name="StepEnd" type="java.sql.Timestamp"><![CDATA[2018-09-26 22:47:35.0]]></Field>
+	<Field name="StepName" type="java.lang.String"><![CDATA[V_INP_FILE]]></Field>
+	<Field name="StepRc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="StepStatus" type="java.lang.String"><![CDATA[D]]></Field>
+	<Field name="TableName" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpStepReport">
+		<Field name="ContextCode" type="java.lang.String">null</Field>
+	<Field name="ErrorMessage" type="java.lang.String"><![CDATA[ODI-1226: Step FIXED_FILE_MAP fails after 1 attempt(s).
+ODI-1227: Task SERIAL-MAP_MAIN- fails on the source connection <Empty Value>.
+ODI-1298: Serial task "SERIAL-MAP_MAIN- (10)" failed because child task "SERIAL-EU-FILE_CSV_LS_UNIT (20)" is in error.
+ODI-1298: Serial task "SERIAL-EU-FILE_CSV_LS_UNIT (20)" failed because child task "Load data-LKM File to SQL- (50)" is in error.
+ODI-1227: Task Load data-LKM File to SQL- fails on the source connection FILE_CSV.
+Caused By: java.sql.SQLException: ODI-40438: File not found: C:\Users\Uttam Suthar\Desktop\ODI_Training\Files//app01
+	at com.sunopsis.jdbc.driver.file.FileResultSet.<init>(FileResultSet.java:156)
+	at com.sunopsis.jdbc.driver.file.impl.commands.CommandSelect.execute(CommandSelect.java:57)
+	at com.sunopsis.jdbc.driver.file.CommandExecutor.executeCommand(CommandExecutor.java:34)
+	at com.sunopsis.jdbc.driver.file.FilePreparedStatement.executeQuery(FilePreparedStatement.java:134)
+	at oracle.odi.query.JDBCTemplate.executeQuery(JDBCTemplate.java:194)
+	at oracle.odi.query.JDBCTemplate.executeQuery(JDBCTemplate.java:204)
+	at oracle.odi.runtime.agent.execution.sql.SQLDataProvider.readData(SQLDataProvider.java:100)
+	at oracle.odi.runtime.agent.execution.sql.SQLDataProvider.readData(SQLDataProvider.java:38)
+	at oracle.odi.runtime.agent.execution.Executor.handleDataMovementTask(Executor.java:309)
+	at oracle.odi.runtime.agent.execution.DataMovementTaskExecutionHandler.handleTask(DataMovementTaskExecutionHandler.java:51)
+	at oracle.odi.runtime.agent.execution.SessionTask.processTask(SessionTask.java:206)
+	at oracle.odi.runtime.agent.execution.SessionTask.doExecuteTask(SessionTask.java:117)
+	at oracle.odi.runtime.agent.execution.AbstractSessionTask.execute(AbstractSessionTask.java:886)
+	at oracle.odi.runtime.agent.execution.SessionExecutor$SerialTrain.runTasks(SessionExecutor.java:2225)
+	at oracle.odi.runtime.agent.execution.SessionExecutor.executeSession(SessionExecutor.java:610)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor$1.doAction(TaskExecutorAgentRequestProcessor.java:718)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor$1.doAction(TaskExecutorAgentRequestProcessor.java:611)
+	at oracle.odi.core.persistence.dwgobject.DwgObjectTemplate.execute(DwgObjectTemplate.java:203)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.doProcessStartAgentTask(TaskExecutorAgentRequestProcessor.java:800)
+	at oracle.odi.runtime.agent.processor.impl.StartScenRequestProcessor.access$2700(StartScenRequestProcessor.java:85)
+	at oracle.odi.runtime.agent.processor.impl.StartScenRequestProcessor$StartScenTask.doExecute(StartScenRequestProcessor.java:917)
+	at oracle.odi.runtime.agent.processor.task.AgentTask.execute(AgentTask.java:180)
+	at oracle.odi.runtime.agent.support.DefaultAgentTaskExecutor$1.run(DefaultAgentTaskExecutor.java:66)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at oracle.odi.runtime.agent.support.DefaultAgentTaskExecutor.executeAgentTask(DefaultAgentTaskExecutor.java:76)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.doExecuteAgentTask(TaskExecutorAgentRequestProcessor.java:146)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.process(TaskExecutorAgentRequestProcessor.java:137)
+	at oracle.odi.runtime.agent.support.DefaultRuntimeAgent.execute(DefaultRuntimeAgent.java:79)
+	at oracle.odi.pubws.jaxws.service.OdiInvokeServiceImpl.doInvokeStartScen(OdiInvokeServiceImpl.java:420)
+	at oracle.odi.pubws.jaxws.service.OdiInvokeServiceImpl.invokeStartScen(OdiInvokeServiceImpl.java:366)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:120)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:93)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:149)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:88)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:1136)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:1050)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:1019)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:877)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:419)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:868)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:422)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:169)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:246)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:667)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:368)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:163)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:108)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:286)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:295)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:128)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:103)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:286)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:260)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:137)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:350)
+	at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:25)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at oracle.security.jps.ee.http.JpsAbsFilter$3.run(JpsAbsFilter.java:172)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at oracle.security.jps.util.JpsSubject.doAsPrivileged(JpsSubject.java:315)
+	at oracle.security.jps.ee.util.JpsPlatformUtil.runJaasMode(JpsPlatformUtil.java:650)
+	at oracle.security.jps.ee.http.JpsAbsFilter.runJaasMode(JpsAbsFilter.java:110)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilterInternal(JpsAbsFilter.java:273)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilter(JpsAbsFilter.java:147)
+	at oracle.security.jps.ee.http.JpsFilter.doFilter(JpsFilter.java:94)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at oracle.security.jps.ee.http.JpsAbsFilter$3.run(JpsAbsFilter.java:172)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at oracle.security.jps.util.JpsSubject.doAsPrivileged(JpsSubject.java:315)
+	at oracle.security.jps.ee.util.JpsPlatformUtil.runJaasMode(JpsPlatformUtil.java:650)
+	at oracle.security.jps.ee.http.JpsAbsFilter.runJaasMode(JpsAbsFilter.java:110)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilterInternal(JpsAbsFilter.java:273)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilter(JpsAbsFilter.java:147)
+	at oracle.security.jps.ee.http.JpsFilter.doFilter(JpsFilter.java:94)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at oracle.dms.servlet.DMSServletFilter.doFilter(DMSServletFilter.java:248)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3701)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3667)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:326)
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197)
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203)
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71)
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2443)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2291)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2269)
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1703)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1663)
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272)
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352)
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337)
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57)
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41)
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:644)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:415)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:355)
+Caused by: java.io.FileNotFoundException: C:\Users\Uttam Suthar\Desktop\ODI_Training\Files\app01 (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.sunopsis.jdbc.driver.file.util.SnpsStreamTools.getInputStream(SnpsStreamTools.java:33)
+	at com.sunopsis.jdbc.driver.file.FileResultSet.<init>(FileResultSet.java:75)
+	... 100 more
+]]></Field>
+	<Field name="ExecutionOrder" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="FContextCode" type="java.lang.String"><![CDATA[DEV]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[389629ab-f688-4e32-b293-2ba77e1afbaf]]></Field>
+	<Field name="IStep" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtStepMess" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="LschemaName" type="java.lang.String"><![CDATA[DB_ODS_LS]]></Field>
+	<Field name="ModCode" type="java.lang.String"><![CDATA[ODS_DB]]></Field>
+	<Field name="NbDel" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbErr" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbIns" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbMrg" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="NbRow" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbRun" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="NbUpd" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="ResName" type="java.lang.String"><![CDATA[ABC_TEMP]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenRunNo" type="com.sunopsis.sql.DbInt"><![CDATA[134]]></Field>
+	<Field name="StepBeg" type="java.sql.Timestamp"><![CDATA[2018-09-26 22:47:35.0]]></Field>
+	<Field name="StepDur" type="com.sunopsis.sql.DbFloat"><![CDATA[1]]></Field>
+	<Field name="StepEnd" type="java.sql.Timestamp"><![CDATA[2018-09-26 22:47:36.0]]></Field>
+	<Field name="StepName" type="java.lang.String"><![CDATA[FIXED_FILE_MAP]]></Field>
+	<Field name="StepRc" type="java.lang.String"><![CDATA[ODI-1298]]></Field>
+	<Field name="StepStatus" type="java.lang.String"><![CDATA[E]]></Field>
+	<Field name="TableName" type="java.lang.String"><![CDATA[ABC_TEMP]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpScenReport">
+		<Field name="AgentName" type="java.lang.String"><![CDATA[OracleDIAgent]]></Field>
+	<Field name="ContextCode" type="java.lang.String"><![CDATA[DEV]]></Field>
+	<Field name="ErrorMessage" type="java.lang.String"><![CDATA[ODI-1217: Session FILE_SCN (135) fails with return code ODI-1298.
+ODI-1226: Step FIXED_FILE_MAP fails after 1 attempt(s).
+ODI-1227: Task SERIAL-MAP_MAIN- fails on the source connection <Empty Value>.
+ODI-1298: Serial task "SERIAL-MAP_MAIN- (10)" failed because child task "SERIAL-EU-FILE_CSV_LS_UNIT (20)" is in error.
+ODI-1298: Serial task "SERIAL-EU-FILE_CSV_LS_UNIT (20)" failed because child task "Load data-LKM File to SQL- (50)" is in error.
+ODI-1227: Task Load data-LKM File to SQL- fails on the source connection FILE_CSV.
+Caused By: java.sql.SQLException: ODI-40438: File not found: C:\Users\Uttam Suthar\Desktop\ODI_Training\Files//app01
+	at com.sunopsis.jdbc.driver.file.FileResultSet.<init>(FileResultSet.java:156)
+	at com.sunopsis.jdbc.driver.file.impl.commands.CommandSelect.execute(CommandSelect.java:57)
+	at com.sunopsis.jdbc.driver.file.CommandExecutor.executeCommand(CommandExecutor.java:34)
+	at com.sunopsis.jdbc.driver.file.FilePreparedStatement.executeQuery(FilePreparedStatement.java:134)
+	at oracle.odi.query.JDBCTemplate.executeQuery(JDBCTemplate.java:194)
+	at oracle.odi.query.JDBCTemplate.executeQuery(JDBCTemplate.java:204)
+	at oracle.odi.runtime.agent.execution.sql.SQLDataProvider.readData(SQLDataProvider.java:100)
+	at oracle.odi.runtime.agent.execution.sql.SQLDataProvider.readData(SQLDataProvider.java:38)
+	at oracle.odi.runtime.agent.execution.Executor.handleDataMovementTask(Executor.java:309)
+	at oracle.odi.runtime.agent.execution.DataMovementTaskExecutionHandler.handleTask(DataMovementTaskExecutionHandler.java:51)
+	at oracle.odi.runtime.agent.execution.SessionTask.processTask(SessionTask.java:206)
+	at oracle.odi.runtime.agent.execution.SessionTask.doExecuteTask(SessionTask.java:117)
+	at oracle.odi.runtime.agent.execution.AbstractSessionTask.execute(AbstractSessionTask.java:886)
+	at oracle.odi.runtime.agent.execution.SessionExecutor$SerialTrain.runTasks(SessionExecutor.java:2225)
+	at oracle.odi.runtime.agent.execution.SessionExecutor.executeSession(SessionExecutor.java:610)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor$1.doAction(TaskExecutorAgentRequestProcessor.java:718)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor$1.doAction(TaskExecutorAgentRequestProcessor.java:611)
+	at oracle.odi.core.persistence.dwgobject.DwgObjectTemplate.execute(DwgObjectTemplate.java:203)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.doProcessStartAgentTask(TaskExecutorAgentRequestProcessor.java:800)
+	at oracle.odi.runtime.agent.processor.impl.StartScenRequestProcessor.access$2700(StartScenRequestProcessor.java:85)
+	at oracle.odi.runtime.agent.processor.impl.StartScenRequestProcessor$StartScenTask.doExecute(StartScenRequestProcessor.java:917)
+	at oracle.odi.runtime.agent.processor.task.AgentTask.execute(AgentTask.java:180)
+	at oracle.odi.runtime.agent.support.DefaultAgentTaskExecutor$1.run(DefaultAgentTaskExecutor.java:66)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at oracle.odi.runtime.agent.support.DefaultAgentTaskExecutor.executeAgentTask(DefaultAgentTaskExecutor.java:76)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.doExecuteAgentTask(TaskExecutorAgentRequestProcessor.java:146)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.process(TaskExecutorAgentRequestProcessor.java:137)
+	at oracle.odi.runtime.agent.support.DefaultRuntimeAgent.execute(DefaultRuntimeAgent.java:79)
+	at oracle.odi.pubws.jaxws.service.OdiInvokeServiceImpl.doInvokeStartScen(OdiInvokeServiceImpl.java:420)
+	at oracle.odi.pubws.jaxws.service.OdiInvokeServiceImpl.invokeStartScen(OdiInvokeServiceImpl.java:366)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:120)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:93)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:149)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:88)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:1136)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:1050)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:1019)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:877)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:419)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:868)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:422)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:169)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:246)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:667)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:368)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:163)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:108)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:286)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:295)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:128)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:103)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:286)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:260)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:137)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:350)
+	at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:25)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at oracle.security.jps.ee.http.JpsAbsFilter$3.run(JpsAbsFilter.java:172)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at oracle.security.jps.util.JpsSubject.doAsPrivileged(JpsSubject.java:315)
+	at oracle.security.jps.ee.util.JpsPlatformUtil.runJaasMode(JpsPlatformUtil.java:650)
+	at oracle.security.jps.ee.http.JpsAbsFilter.runJaasMode(JpsAbsFilter.java:110)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilterInternal(JpsAbsFilter.java:273)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilter(JpsAbsFilter.java:147)
+	at oracle.security.jps.ee.http.JpsFilter.doFilter(JpsFilter.java:94)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at oracle.security.jps.ee.http.JpsAbsFilter$3.run(JpsAbsFilter.java:172)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at oracle.security.jps.util.JpsSubject.doAsPrivileged(JpsSubject.java:315)
+	at oracle.security.jps.ee.util.JpsPlatformUtil.runJaasMode(JpsPlatformUtil.java:650)
+	at oracle.security.jps.ee.http.JpsAbsFilter.runJaasMode(JpsAbsFilter.java:110)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilterInternal(JpsAbsFilter.java:273)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilter(JpsAbsFilter.java:147)
+	at oracle.security.jps.ee.http.JpsFilter.doFilter(JpsFilter.java:94)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at oracle.dms.servlet.DMSServletFilter.doFilter(DMSServletFilter.java:248)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3701)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3667)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:326)
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197)
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203)
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71)
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2443)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2291)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2269)
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1703)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1663)
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272)
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352)
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337)
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57)
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41)
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:644)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:415)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:355)
+Caused by: java.io.FileNotFoundException: C:\Users\Uttam Suthar\Desktop\ODI_Training\Files\app01 (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.sunopsis.jdbc.driver.file.util.SnpsStreamTools.getInputStream(SnpsStreamTools.java:33)
+	at com.sunopsis.jdbc.driver.file.FileResultSet.<init>(FileResultSet.java:75)
+	... 100 more
+]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[f78b82a6-411e-44f5-9469-ce9ad74c0aa4]]></Field>
+	<Field name="ITxtSessMess" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="NbDel" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbErr" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbIns" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbMrg" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="NbRow" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbUpd" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenRunNo" type="com.sunopsis.sql.DbInt"><![CDATA[135]]></Field>
+	<Field name="SessBeg" type="java.sql.Timestamp"><![CDATA[2018-09-26 22:50:18.0]]></Field>
+	<Field name="SessDur" type="com.sunopsis.sql.DbFloat"><![CDATA[0]]></Field>
+	<Field name="SessEnd" type="java.sql.Timestamp"><![CDATA[2018-09-26 22:50:18.0]]></Field>
+	<Field name="SessRc" type="java.lang.String"><![CDATA[ODI-1298]]></Field>
+	<Field name="SessStatus" type="java.lang.String"><![CDATA[E]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpStepReport">
+		<Field name="ContextCode" type="java.lang.String">null</Field>
+	<Field name="ErrorMessage" type="java.lang.String">null</Field>
+	<Field name="ExecutionOrder" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="FContextCode" type="java.lang.String"><![CDATA[DEV]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[fbe3b77b-0efc-41e8-b334-34e8ec88b184]]></Field>
+	<Field name="IStep" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtStepMess" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="LschemaName" type="java.lang.String">null</Field>
+	<Field name="ModCode" type="java.lang.String">null</Field>
+	<Field name="NbDel" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbErr" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbIns" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbMrg" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="NbRow" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbRun" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="NbUpd" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="ResName" type="java.lang.String">null</Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenRunNo" type="com.sunopsis.sql.DbInt"><![CDATA[135]]></Field>
+	<Field name="StepBeg" type="java.sql.Timestamp"><![CDATA[2018-09-26 22:50:18.0]]></Field>
+	<Field name="StepDur" type="com.sunopsis.sql.DbFloat"><![CDATA[0]]></Field>
+	<Field name="StepEnd" type="java.sql.Timestamp"><![CDATA[2018-09-26 22:50:18.0]]></Field>
+	<Field name="StepName" type="java.lang.String"><![CDATA[V_INP_FILE]]></Field>
+	<Field name="StepRc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="StepStatus" type="java.lang.String"><![CDATA[D]]></Field>
+	<Field name="TableName" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpStepReport">
+		<Field name="ContextCode" type="java.lang.String">null</Field>
+	<Field name="ErrorMessage" type="java.lang.String"><![CDATA[ODI-1226: Step FIXED_FILE_MAP fails after 1 attempt(s).
+ODI-1227: Task SERIAL-MAP_MAIN- fails on the source connection <Empty Value>.
+ODI-1298: Serial task "SERIAL-MAP_MAIN- (10)" failed because child task "SERIAL-EU-FILE_CSV_LS_UNIT (20)" is in error.
+ODI-1298: Serial task "SERIAL-EU-FILE_CSV_LS_UNIT (20)" failed because child task "Load data-LKM File to SQL- (50)" is in error.
+ODI-1227: Task Load data-LKM File to SQL- fails on the source connection FILE_CSV.
+Caused By: java.sql.SQLException: ODI-40438: File not found: C:\Users\Uttam Suthar\Desktop\ODI_Training\Files//app01
+	at com.sunopsis.jdbc.driver.file.FileResultSet.<init>(FileResultSet.java:156)
+	at com.sunopsis.jdbc.driver.file.impl.commands.CommandSelect.execute(CommandSelect.java:57)
+	at com.sunopsis.jdbc.driver.file.CommandExecutor.executeCommand(CommandExecutor.java:34)
+	at com.sunopsis.jdbc.driver.file.FilePreparedStatement.executeQuery(FilePreparedStatement.java:134)
+	at oracle.odi.query.JDBCTemplate.executeQuery(JDBCTemplate.java:194)
+	at oracle.odi.query.JDBCTemplate.executeQuery(JDBCTemplate.java:204)
+	at oracle.odi.runtime.agent.execution.sql.SQLDataProvider.readData(SQLDataProvider.java:100)
+	at oracle.odi.runtime.agent.execution.sql.SQLDataProvider.readData(SQLDataProvider.java:38)
+	at oracle.odi.runtime.agent.execution.Executor.handleDataMovementTask(Executor.java:309)
+	at oracle.odi.runtime.agent.execution.DataMovementTaskExecutionHandler.handleTask(DataMovementTaskExecutionHandler.java:51)
+	at oracle.odi.runtime.agent.execution.SessionTask.processTask(SessionTask.java:206)
+	at oracle.odi.runtime.agent.execution.SessionTask.doExecuteTask(SessionTask.java:117)
+	at oracle.odi.runtime.agent.execution.AbstractSessionTask.execute(AbstractSessionTask.java:886)
+	at oracle.odi.runtime.agent.execution.SessionExecutor$SerialTrain.runTasks(SessionExecutor.java:2225)
+	at oracle.odi.runtime.agent.execution.SessionExecutor.executeSession(SessionExecutor.java:610)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor$1.doAction(TaskExecutorAgentRequestProcessor.java:718)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor$1.doAction(TaskExecutorAgentRequestProcessor.java:611)
+	at oracle.odi.core.persistence.dwgobject.DwgObjectTemplate.execute(DwgObjectTemplate.java:203)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.doProcessStartAgentTask(TaskExecutorAgentRequestProcessor.java:800)
+	at oracle.odi.runtime.agent.processor.impl.StartScenRequestProcessor.access$2700(StartScenRequestProcessor.java:85)
+	at oracle.odi.runtime.agent.processor.impl.StartScenRequestProcessor$StartScenTask.doExecute(StartScenRequestProcessor.java:917)
+	at oracle.odi.runtime.agent.processor.task.AgentTask.execute(AgentTask.java:180)
+	at oracle.odi.runtime.agent.support.DefaultAgentTaskExecutor$1.run(DefaultAgentTaskExecutor.java:66)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at oracle.odi.runtime.agent.support.DefaultAgentTaskExecutor.executeAgentTask(DefaultAgentTaskExecutor.java:76)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.doExecuteAgentTask(TaskExecutorAgentRequestProcessor.java:146)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.process(TaskExecutorAgentRequestProcessor.java:137)
+	at oracle.odi.runtime.agent.support.DefaultRuntimeAgent.execute(DefaultRuntimeAgent.java:79)
+	at oracle.odi.pubws.jaxws.service.OdiInvokeServiceImpl.doInvokeStartScen(OdiInvokeServiceImpl.java:420)
+	at oracle.odi.pubws.jaxws.service.OdiInvokeServiceImpl.invokeStartScen(OdiInvokeServiceImpl.java:366)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:120)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:93)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:149)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:88)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:1136)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:1050)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:1019)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:877)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:419)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:868)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:422)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:169)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:246)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:667)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:368)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:163)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:108)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:286)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:295)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:128)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:103)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:286)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:260)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:137)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:350)
+	at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:25)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at oracle.security.jps.ee.http.JpsAbsFilter$3.run(JpsAbsFilter.java:172)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at oracle.security.jps.util.JpsSubject.doAsPrivileged(JpsSubject.java:315)
+	at oracle.security.jps.ee.util.JpsPlatformUtil.runJaasMode(JpsPlatformUtil.java:650)
+	at oracle.security.jps.ee.http.JpsAbsFilter.runJaasMode(JpsAbsFilter.java:110)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilterInternal(JpsAbsFilter.java:273)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilter(JpsAbsFilter.java:147)
+	at oracle.security.jps.ee.http.JpsFilter.doFilter(JpsFilter.java:94)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at oracle.security.jps.ee.http.JpsAbsFilter$3.run(JpsAbsFilter.java:172)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at oracle.security.jps.util.JpsSubject.doAsPrivileged(JpsSubject.java:315)
+	at oracle.security.jps.ee.util.JpsPlatformUtil.runJaasMode(JpsPlatformUtil.java:650)
+	at oracle.security.jps.ee.http.JpsAbsFilter.runJaasMode(JpsAbsFilter.java:110)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilterInternal(JpsAbsFilter.java:273)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilter(JpsAbsFilter.java:147)
+	at oracle.security.jps.ee.http.JpsFilter.doFilter(JpsFilter.java:94)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at oracle.dms.servlet.DMSServletFilter.doFilter(DMSServletFilter.java:248)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3701)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3667)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:326)
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197)
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203)
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71)
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2443)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2291)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2269)
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1703)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1663)
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272)
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352)
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337)
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57)
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41)
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:644)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:415)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:355)
+Caused by: java.io.FileNotFoundException: C:\Users\Uttam Suthar\Desktop\ODI_Training\Files\app01 (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.sunopsis.jdbc.driver.file.util.SnpsStreamTools.getInputStream(SnpsStreamTools.java:33)
+	at com.sunopsis.jdbc.driver.file.FileResultSet.<init>(FileResultSet.java:75)
+	... 100 more
+]]></Field>
+	<Field name="ExecutionOrder" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="FContextCode" type="java.lang.String"><![CDATA[DEV]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[f5a4dac5-41df-4897-9c07-f8a1e618b378]]></Field>
+	<Field name="IStep" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtStepMess" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="LschemaName" type="java.lang.String"><![CDATA[DB_ODS_LS]]></Field>
+	<Field name="ModCode" type="java.lang.String"><![CDATA[ODS_DB]]></Field>
+	<Field name="NbDel" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbErr" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbIns" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbMrg" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="NbRow" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbRun" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="NbUpd" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="ResName" type="java.lang.String"><![CDATA[ABC_TEMP]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenRunNo" type="com.sunopsis.sql.DbInt"><![CDATA[135]]></Field>
+	<Field name="StepBeg" type="java.sql.Timestamp"><![CDATA[2018-09-26 22:50:18.0]]></Field>
+	<Field name="StepDur" type="com.sunopsis.sql.DbFloat"><![CDATA[0]]></Field>
+	<Field name="StepEnd" type="java.sql.Timestamp"><![CDATA[2018-09-26 22:50:18.0]]></Field>
+	<Field name="StepName" type="java.lang.String"><![CDATA[FIXED_FILE_MAP]]></Field>
+	<Field name="StepRc" type="java.lang.String"><![CDATA[ODI-1298]]></Field>
+	<Field name="StepStatus" type="java.lang.String"><![CDATA[E]]></Field>
+	<Field name="TableName" type="java.lang.String"><![CDATA[ABC_TEMP]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpScenReport">
+		<Field name="AgentName" type="java.lang.String"><![CDATA[OracleDIAgent]]></Field>
+	<Field name="ContextCode" type="java.lang.String"><![CDATA[DEV]]></Field>
+	<Field name="ErrorMessage" type="java.lang.String"><![CDATA[ODI-1217: Session FILE_SCN (136) fails with return code ODI-1298.
+ODI-1226: Step FIXED_FILE_MAP fails after 1 attempt(s).
+ODI-1227: Task SERIAL-MAP_MAIN- fails on the source connection <Empty Value>.
+ODI-1298: Serial task "SERIAL-MAP_MAIN- (10)" failed because child task "SERIAL-EU-FILE_CSV_LS_UNIT (20)" is in error.
+ODI-1298: Serial task "SERIAL-EU-FILE_CSV_LS_UNIT (20)" failed because child task "Load data-LKM File to SQL- (50)" is in error.
+ODI-1227: Task Load data-LKM File to SQL- fails on the source connection FILE_CSV.
+Caused By: java.sql.SQLException: ODI-40438: File not found: C:\Users\Uttam Suthar\Desktop\ODI_Training\Files//app01
+	at com.sunopsis.jdbc.driver.file.FileResultSet.<init>(FileResultSet.java:156)
+	at com.sunopsis.jdbc.driver.file.impl.commands.CommandSelect.execute(CommandSelect.java:57)
+	at com.sunopsis.jdbc.driver.file.CommandExecutor.executeCommand(CommandExecutor.java:34)
+	at com.sunopsis.jdbc.driver.file.FilePreparedStatement.executeQuery(FilePreparedStatement.java:134)
+	at oracle.odi.query.JDBCTemplate.executeQuery(JDBCTemplate.java:194)
+	at oracle.odi.query.JDBCTemplate.executeQuery(JDBCTemplate.java:204)
+	at oracle.odi.runtime.agent.execution.sql.SQLDataProvider.readData(SQLDataProvider.java:100)
+	at oracle.odi.runtime.agent.execution.sql.SQLDataProvider.readData(SQLDataProvider.java:38)
+	at oracle.odi.runtime.agent.execution.Executor.handleDataMovementTask(Executor.java:309)
+	at oracle.odi.runtime.agent.execution.DataMovementTaskExecutionHandler.handleTask(DataMovementTaskExecutionHandler.java:51)
+	at oracle.odi.runtime.agent.execution.SessionTask.processTask(SessionTask.java:206)
+	at oracle.odi.runtime.agent.execution.SessionTask.doExecuteTask(SessionTask.java:117)
+	at oracle.odi.runtime.agent.execution.AbstractSessionTask.execute(AbstractSessionTask.java:886)
+	at oracle.odi.runtime.agent.execution.SessionExecutor$SerialTrain.runTasks(SessionExecutor.java:2225)
+	at oracle.odi.runtime.agent.execution.SessionExecutor.executeSession(SessionExecutor.java:610)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor$1.doAction(TaskExecutorAgentRequestProcessor.java:718)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor$1.doAction(TaskExecutorAgentRequestProcessor.java:611)
+	at oracle.odi.core.persistence.dwgobject.DwgObjectTemplate.execute(DwgObjectTemplate.java:203)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.doProcessStartAgentTask(TaskExecutorAgentRequestProcessor.java:800)
+	at oracle.odi.runtime.agent.processor.impl.StartScenRequestProcessor.access$2700(StartScenRequestProcessor.java:85)
+	at oracle.odi.runtime.agent.processor.impl.StartScenRequestProcessor$StartScenTask.doExecute(StartScenRequestProcessor.java:917)
+	at oracle.odi.runtime.agent.processor.task.AgentTask.execute(AgentTask.java:180)
+	at oracle.odi.runtime.agent.support.DefaultAgentTaskExecutor$1.run(DefaultAgentTaskExecutor.java:66)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at oracle.odi.runtime.agent.support.DefaultAgentTaskExecutor.executeAgentTask(DefaultAgentTaskExecutor.java:76)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.doExecuteAgentTask(TaskExecutorAgentRequestProcessor.java:146)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.process(TaskExecutorAgentRequestProcessor.java:137)
+	at oracle.odi.runtime.agent.support.DefaultRuntimeAgent.execute(DefaultRuntimeAgent.java:79)
+	at oracle.odi.pubws.jaxws.service.OdiInvokeServiceImpl.doInvokeStartScen(OdiInvokeServiceImpl.java:420)
+	at oracle.odi.pubws.jaxws.service.OdiInvokeServiceImpl.invokeStartScen(OdiInvokeServiceImpl.java:366)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:120)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:93)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:149)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:88)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:1136)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:1050)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:1019)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:877)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:419)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:868)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:422)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:169)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:246)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:667)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:368)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:163)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:108)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:286)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:295)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:128)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:103)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:286)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:260)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:137)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:350)
+	at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:25)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at oracle.security.jps.ee.http.JpsAbsFilter$3.run(JpsAbsFilter.java:172)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at oracle.security.jps.util.JpsSubject.doAsPrivileged(JpsSubject.java:315)
+	at oracle.security.jps.ee.util.JpsPlatformUtil.runJaasMode(JpsPlatformUtil.java:650)
+	at oracle.security.jps.ee.http.JpsAbsFilter.runJaasMode(JpsAbsFilter.java:110)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilterInternal(JpsAbsFilter.java:273)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilter(JpsAbsFilter.java:147)
+	at oracle.security.jps.ee.http.JpsFilter.doFilter(JpsFilter.java:94)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at oracle.security.jps.ee.http.JpsAbsFilter$3.run(JpsAbsFilter.java:172)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at oracle.security.jps.util.JpsSubject.doAsPrivileged(JpsSubject.java:315)
+	at oracle.security.jps.ee.util.JpsPlatformUtil.runJaasMode(JpsPlatformUtil.java:650)
+	at oracle.security.jps.ee.http.JpsAbsFilter.runJaasMode(JpsAbsFilter.java:110)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilterInternal(JpsAbsFilter.java:273)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilter(JpsAbsFilter.java:147)
+	at oracle.security.jps.ee.http.JpsFilter.doFilter(JpsFilter.java:94)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at oracle.dms.servlet.DMSServletFilter.doFilter(DMSServletFilter.java:248)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3701)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3667)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:326)
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197)
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203)
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71)
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2443)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2291)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2269)
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1703)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1663)
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272)
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352)
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337)
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57)
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41)
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:644)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:415)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:355)
+Caused by: java.io.FileNotFoundException: C:\Users\Uttam Suthar\Desktop\ODI_Training\Files\app01 (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.sunopsis.jdbc.driver.file.util.SnpsStreamTools.getInputStream(SnpsStreamTools.java:33)
+	at com.sunopsis.jdbc.driver.file.FileResultSet.<init>(FileResultSet.java:75)
+	... 100 more
+]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[0e144be4-f2e8-446f-b31b-2a7dfb3cc199]]></Field>
+	<Field name="ITxtSessMess" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="NbDel" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbErr" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbIns" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbMrg" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="NbRow" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbUpd" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenRunNo" type="com.sunopsis.sql.DbInt"><![CDATA[136]]></Field>
+	<Field name="SessBeg" type="java.sql.Timestamp"><![CDATA[2018-09-26 23:25:03.0]]></Field>
+	<Field name="SessDur" type="com.sunopsis.sql.DbFloat"><![CDATA[0]]></Field>
+	<Field name="SessEnd" type="java.sql.Timestamp"><![CDATA[2018-09-26 23:25:03.0]]></Field>
+	<Field name="SessRc" type="java.lang.String"><![CDATA[ODI-1298]]></Field>
+	<Field name="SessStatus" type="java.lang.String"><![CDATA[E]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpStepReport">
+		<Field name="ContextCode" type="java.lang.String">null</Field>
+	<Field name="ErrorMessage" type="java.lang.String">null</Field>
+	<Field name="ExecutionOrder" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="FContextCode" type="java.lang.String"><![CDATA[DEV]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[a10d67c4-41e0-46f0-8e15-b0d1615f7499]]></Field>
+	<Field name="IStep" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtStepMess" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="LschemaName" type="java.lang.String">null</Field>
+	<Field name="ModCode" type="java.lang.String">null</Field>
+	<Field name="NbDel" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbErr" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbIns" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbMrg" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="NbRow" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbRun" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="NbUpd" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="ResName" type="java.lang.String">null</Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenRunNo" type="com.sunopsis.sql.DbInt"><![CDATA[136]]></Field>
+	<Field name="StepBeg" type="java.sql.Timestamp"><![CDATA[2018-09-26 23:25:03.0]]></Field>
+	<Field name="StepDur" type="com.sunopsis.sql.DbFloat"><![CDATA[0]]></Field>
+	<Field name="StepEnd" type="java.sql.Timestamp"><![CDATA[2018-09-26 23:25:03.0]]></Field>
+	<Field name="StepName" type="java.lang.String"><![CDATA[V_INP_FILE]]></Field>
+	<Field name="StepRc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="StepStatus" type="java.lang.String"><![CDATA[D]]></Field>
+	<Field name="TableName" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpStepReport">
+		<Field name="ContextCode" type="java.lang.String">null</Field>
+	<Field name="ErrorMessage" type="java.lang.String"><![CDATA[ODI-1226: Step FIXED_FILE_MAP fails after 1 attempt(s).
+ODI-1227: Task SERIAL-MAP_MAIN- fails on the source connection <Empty Value>.
+ODI-1298: Serial task "SERIAL-MAP_MAIN- (10)" failed because child task "SERIAL-EU-FILE_CSV_LS_UNIT (20)" is in error.
+ODI-1298: Serial task "SERIAL-EU-FILE_CSV_LS_UNIT (20)" failed because child task "Load data-LKM File to SQL- (50)" is in error.
+ODI-1227: Task Load data-LKM File to SQL- fails on the source connection FILE_CSV.
+Caused By: java.sql.SQLException: ODI-40438: File not found: C:\Users\Uttam Suthar\Desktop\ODI_Training\Files//app01
+	at com.sunopsis.jdbc.driver.file.FileResultSet.<init>(FileResultSet.java:156)
+	at com.sunopsis.jdbc.driver.file.impl.commands.CommandSelect.execute(CommandSelect.java:57)
+	at com.sunopsis.jdbc.driver.file.CommandExecutor.executeCommand(CommandExecutor.java:34)
+	at com.sunopsis.jdbc.driver.file.FilePreparedStatement.executeQuery(FilePreparedStatement.java:134)
+	at oracle.odi.query.JDBCTemplate.executeQuery(JDBCTemplate.java:194)
+	at oracle.odi.query.JDBCTemplate.executeQuery(JDBCTemplate.java:204)
+	at oracle.odi.runtime.agent.execution.sql.SQLDataProvider.readData(SQLDataProvider.java:100)
+	at oracle.odi.runtime.agent.execution.sql.SQLDataProvider.readData(SQLDataProvider.java:38)
+	at oracle.odi.runtime.agent.execution.Executor.handleDataMovementTask(Executor.java:309)
+	at oracle.odi.runtime.agent.execution.DataMovementTaskExecutionHandler.handleTask(DataMovementTaskExecutionHandler.java:51)
+	at oracle.odi.runtime.agent.execution.SessionTask.processTask(SessionTask.java:206)
+	at oracle.odi.runtime.agent.execution.SessionTask.doExecuteTask(SessionTask.java:117)
+	at oracle.odi.runtime.agent.execution.AbstractSessionTask.execute(AbstractSessionTask.java:886)
+	at oracle.odi.runtime.agent.execution.SessionExecutor$SerialTrain.runTasks(SessionExecutor.java:2225)
+	at oracle.odi.runtime.agent.execution.SessionExecutor.executeSession(SessionExecutor.java:610)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor$1.doAction(TaskExecutorAgentRequestProcessor.java:718)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor$1.doAction(TaskExecutorAgentRequestProcessor.java:611)
+	at oracle.odi.core.persistence.dwgobject.DwgObjectTemplate.execute(DwgObjectTemplate.java:203)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.doProcessStartAgentTask(TaskExecutorAgentRequestProcessor.java:800)
+	at oracle.odi.runtime.agent.processor.impl.StartScenRequestProcessor.access$2700(StartScenRequestProcessor.java:85)
+	at oracle.odi.runtime.agent.processor.impl.StartScenRequestProcessor$StartScenTask.doExecute(StartScenRequestProcessor.java:917)
+	at oracle.odi.runtime.agent.processor.task.AgentTask.execute(AgentTask.java:180)
+	at oracle.odi.runtime.agent.support.DefaultAgentTaskExecutor$1.run(DefaultAgentTaskExecutor.java:66)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at oracle.odi.runtime.agent.support.DefaultAgentTaskExecutor.executeAgentTask(DefaultAgentTaskExecutor.java:76)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.doExecuteAgentTask(TaskExecutorAgentRequestProcessor.java:146)
+	at oracle.odi.runtime.agent.processor.TaskExecutorAgentRequestProcessor.process(TaskExecutorAgentRequestProcessor.java:137)
+	at oracle.odi.runtime.agent.support.DefaultRuntimeAgent.execute(DefaultRuntimeAgent.java:79)
+	at oracle.odi.pubws.jaxws.service.OdiInvokeServiceImpl.doInvokeStartScen(OdiInvokeServiceImpl.java:420)
+	at oracle.odi.pubws.jaxws.service.OdiInvokeServiceImpl.invokeStartScen(OdiInvokeServiceImpl.java:366)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:120)
+	at weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker.invoke(WLSInstanceResolver.java:93)
+	at com.sun.xml.ws.server.InvokerTube$2.invoke(InvokerTube.java:149)
+	at com.sun.xml.ws.server.sei.SEIInvokerTube.processRequest(SEIInvokerTube.java:88)
+	at com.sun.xml.ws.api.pipe.Fiber.__doRun(Fiber.java:1136)
+	at com.sun.xml.ws.api.pipe.Fiber._doRun(Fiber.java:1050)
+	at com.sun.xml.ws.api.pipe.Fiber.doRun(Fiber.java:1019)
+	at com.sun.xml.ws.api.pipe.Fiber.runSync(Fiber.java:877)
+	at com.sun.xml.ws.server.WSEndpointImpl$2.process(WSEndpointImpl.java:419)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:868)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:422)
+	at com.sun.xml.ws.transport.http.servlet.ServletAdapter.handle(ServletAdapter.java:169)
+	at weblogic.wsee.jaxws.WLSServletAdapter.handle(WLSServletAdapter.java:246)
+	at weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke.run(HttpServletAdapter.java:667)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:368)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:163)
+	at weblogic.wsee.util.ServerSecurityHelper.authenticatedInvoke(ServerSecurityHelper.java:108)
+	at weblogic.wsee.jaxws.HttpServletAdapter$3.run(HttpServletAdapter.java:286)
+	at weblogic.wsee.jaxws.HttpServletAdapter.post(HttpServletAdapter.java:295)
+	at weblogic.wsee.jaxws.JAXWSServlet.doRequest(JAXWSServlet.java:128)
+	at weblogic.servlet.http.AbstractAsyncServlet.service(AbstractAsyncServlet.java:103)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:286)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:260)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:137)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:350)
+	at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:25)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at oracle.security.jps.ee.http.JpsAbsFilter$3.run(JpsAbsFilter.java:172)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at oracle.security.jps.util.JpsSubject.doAsPrivileged(JpsSubject.java:315)
+	at oracle.security.jps.ee.util.JpsPlatformUtil.runJaasMode(JpsPlatformUtil.java:650)
+	at oracle.security.jps.ee.http.JpsAbsFilter.runJaasMode(JpsAbsFilter.java:110)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilterInternal(JpsAbsFilter.java:273)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilter(JpsAbsFilter.java:147)
+	at oracle.security.jps.ee.http.JpsFilter.doFilter(JpsFilter.java:94)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at oracle.security.jps.ee.http.JpsAbsFilter$3.run(JpsAbsFilter.java:172)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at oracle.security.jps.util.JpsSubject.doAsPrivileged(JpsSubject.java:315)
+	at oracle.security.jps.ee.util.JpsPlatformUtil.runJaasMode(JpsPlatformUtil.java:650)
+	at oracle.security.jps.ee.http.JpsAbsFilter.runJaasMode(JpsAbsFilter.java:110)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilterInternal(JpsAbsFilter.java:273)
+	at oracle.security.jps.ee.http.JpsAbsFilter.doFilter(JpsAbsFilter.java:147)
+	at oracle.security.jps.ee.http.JpsFilter.doFilter(JpsFilter.java:94)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at oracle.dms.servlet.DMSServletFilter.doFilter(DMSServletFilter.java:248)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:78)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3701)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3667)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:326)
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197)
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203)
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71)
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2443)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2291)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2269)
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1703)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1663)
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272)
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352)
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337)
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57)
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41)
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:644)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:415)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:355)
+Caused by: java.io.FileNotFoundException: C:\Users\Uttam Suthar\Desktop\ODI_Training\Files\app01 (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.sunopsis.jdbc.driver.file.util.SnpsStreamTools.getInputStream(SnpsStreamTools.java:33)
+	at com.sunopsis.jdbc.driver.file.FileResultSet.<init>(FileResultSet.java:75)
+	... 100 more
+]]></Field>
+	<Field name="ExecutionOrder" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="FContextCode" type="java.lang.String"><![CDATA[DEV]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[5ccc9e4d-d3ec-4fc0-b0cf-6d50f65be83d]]></Field>
+	<Field name="IStep" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtStepMess" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="LschemaName" type="java.lang.String"><![CDATA[DB_ODS_LS]]></Field>
+	<Field name="ModCode" type="java.lang.String"><![CDATA[ODS_DB]]></Field>
+	<Field name="NbDel" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbErr" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbIns" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbMrg" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="NbRow" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="NbRun" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="NbUpd" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="ResName" type="java.lang.String"><![CDATA[ABC_TEMP]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenRunNo" type="com.sunopsis.sql.DbInt"><![CDATA[136]]></Field>
+	<Field name="StepBeg" type="java.sql.Timestamp"><![CDATA[2018-09-26 23:25:03.0]]></Field>
+	<Field name="StepDur" type="com.sunopsis.sql.DbFloat"><![CDATA[0]]></Field>
+	<Field name="StepEnd" type="java.sql.Timestamp"><![CDATA[2018-09-26 23:25:03.0]]></Field>
+	<Field name="StepName" type="java.lang.String"><![CDATA[FIXED_FILE_MAP]]></Field>
+	<Field name="StepRc" type="java.lang.String"><![CDATA[ODI-1298]]></Field>
+	<Field name="StepStatus" type="java.lang.String"><![CDATA[E]]></Field>
+	<Field name="TableName" type="java.lang.String"><![CDATA[ABC_TEMP]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpVarScen">
+		<Field name="DefDate" type="java.sql.Timestamp">null</Field>
+	<Field name="DefN" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="DefV" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[c2edd3d9-89e5-4a94-b9ec-9dc6ff457930]]></Field>
+	<Field name="IndStore" type="java.lang.String"><![CDATA[L]]></Field>
+	<Field name="ITxtDefT" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtVar" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="VarDatatype" type="java.lang.String"><![CDATA[A]]></Field>
+	<Field name="VarLongValue" type="java.lang.String">null</Field>
+	<Field name="VarName" type="java.lang.String"><![CDATA[FIRST_PROJ.V_INP_FILE]]></Field>
+	<Field name="VarParam" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="VarParamOrder" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpScenStep">
+		<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="CleanupOnError" type="java.lang.String">null</Field>
+	<Field name="ContextCode" type="java.lang.String">null</Field>
+	<Field name="FContextCode" type="java.lang.String">null</Field>
+	<Field name="GenInfo" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[fadd98b1-c7eb-4bcb-aa2f-0aa21047a751]]></Field>
+	<Field name="IndLogMethod" type="java.lang.String"><![CDATA[Y]]></Field>
+	<Field name="ITxtVarValue" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="JagentLschemaName" type="java.lang.String">null</Field>
+	<Field name="KoExit" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="KoExitCode" type="java.lang.String">null</Field>
+	<Field name="KoNextStep" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="KoRetry" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="KoRetryInterv" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="LschemaName" type="java.lang.String">null</Field>
+	<Field name="MaxErr" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="MaxErrPrct" type="java.lang.String">null</Field>
+	<Field name="ModCode" type="java.lang.String">null</Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="OkExit" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="OkExitCode" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="OkNextStep" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="ResName" type="java.lang.String">null</Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="StepName" type="java.lang.String"><![CDATA[V_INP_FILE]]></Field>
+	<Field name="StepType" type="java.lang.String"><![CDATA[VD]]></Field>
+	<Field name="TableName" type="java.lang.String">null</Field>
+	<Field name="VarIncr" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="VarLongValue" type="java.lang.String">null</Field>
+	<Field name="VarName" type="java.lang.String"><![CDATA[FIRST_PROJ.V_INP_FILE]]></Field>
+	<Field name="VarOp" type="java.lang.String"><![CDATA[=]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpScenTask">
+		<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColConnectId" type="java.lang.String">null</Field>
+	<Field name="ColContextCode" type="java.lang.String">null</Field>
+	<Field name="ColEncKey" type="java.lang.String">null</Field>
+	<Field name="ColEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="ColIndCommit" type="java.lang.String">null</Field>
+	<Field name="ColIndEnc" type="java.lang.String">null</Field>
+	<Field name="ColIsolLevel" type="java.lang.String">null</Field>
+	<Field name="ColLschemaName" type="java.lang.String">null</Field>
+	<Field name="ColTechIntName" type="java.lang.String">null</Field>
+	<Field name="ColTxt" type="java.lang.String">null</Field>
+	<Field name="DefConnectId" type="java.lang.String">null</Field>
+	<Field name="DefContextCode" type="java.lang.String">null</Field>
+	<Field name="DefEncKey" type="java.lang.String">null</Field>
+	<Field name="DefEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="DefIndCommit" type="java.lang.String">null</Field>
+	<Field name="DefIndEnc" type="java.lang.String">null</Field>
+	<Field name="DefIsolLevel" type="java.lang.String">null</Field>
+	<Field name="DefLschemaName" type="java.lang.String">null</Field>
+	<Field name="DefTechIntName" type="java.lang.String">null</Field>
+	<Field name="DefTxt" type="java.lang.String">null</Field>
+	<Field name="ExeChannel" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[e27ffbb9-5ff4-4c79-8b80-b96fb493a6be]]></Field>
+	<Field name="IndErr" type="java.lang.String">null</Field>
+	<Field name="IndLogFinalCmd" type="java.lang.String">null</Field>
+	<Field name="IndLogMethod" type="java.lang.String">null</Field>
+	<Field name="IndLogNb" type="java.lang.String">null</Field>
+	<Field name="LogLevDet" type="java.lang.String"><![CDATA[3]]></Field>
+	<Field name="MapTaskType" type="java.lang.String">null</Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ParScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="TaskName1" type="java.lang.String"><![CDATA[Variable]]></Field>
+	<Field name="TaskName2" type="java.lang.String"><![CDATA[V_INP_FILE]]></Field>
+	<Field name="TaskName3" type="java.lang.String">null</Field>
+	<Field name="TaskType" type="java.lang.String"><![CDATA[V]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpScenStep">
+		<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="CleanupOnError" type="java.lang.String">null</Field>
+	<Field name="ContextCode" type="java.lang.String">null</Field>
+	<Field name="FContextCode" type="java.lang.String">null</Field>
+	<Field name="GenInfo" type="java.lang.String"><![CDATA[<map-generation-info>
+   <node name="ABC_TEMP" type="IKM" km="IKM Oracle Insert.GLOBAL">
+      <option name="CREATE_TARGET_TABLE" value="false" default="true"/>
+      <option name="INSERT_HINT" value="APPEND PARALLEL" default="true"/>
+      <option name="SELECT_HINT" value=" " default="true"/>
+      <option name="CONSTRAINTS" value="None" default="true"/>
+      <option name="TRUNCATE_TARGET_TABLE" value="false" default="true"/>
+      <option name="DELETE_ALL" value="false" default="true"/>
+      <option name="INDEXES" value="None" default="true"/>
+   </node>
+   <node name="ABC_TEMP" type="CKM" km="CKM Oracle.FIRST_PROJ">
+      <option name="DROP_ERROR_TABLE" value="false" default="true"/>
+      <option name="DROP_CHECK_TABLE" value="false" default="true"/>
+      <option name="CREATE_ERROR_INDEX" value="true" default="true"/>
+      <option name="CREATE_FLOW_INDEX" value="true" default="true"/>
+      <option name="COMPATIBLE" value="9" default="true"/>
+      <option name="VALIDATE" value="false" default="true"/>
+      <option name="ENABLE_EDITION_SUPPORT" value="false" default="true"/>
+      <option name="UPGRADE_ERROR_TABLE" value="false" default="true"/>
+   </node>
+   <node name="FIX_AP" type="LKM" km="LKM File to SQL.FIRST_PROJ">
+      <option name="DELETE_TEMPORARY_OBJECTS " value="true" default="true"/>
+   </node>
+   <node name="FIX" type="XKM" km="XKM SQL File Extract.GLOBAL"/>
+   <target name="ABC_TEMP" resource="ABC_TEMP" model="ODS_DB" logicalSchema="DB_ODS_LS" forcedContext=""/>
+</map-generation-info>]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[5c658075-c550-4d1f-860a-155d0207a5c9]]></Field>
+	<Field name="IndLogMethod" type="java.lang.String"><![CDATA[Y]]></Field>
+	<Field name="ITxtVarValue" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="JagentLschemaName" type="java.lang.String">null</Field>
+	<Field name="KoExit" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="KoExitCode" type="java.lang.String">null</Field>
+	<Field name="KoNextStep" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="KoRetry" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="KoRetryInterv" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="LschemaName" type="java.lang.String"><![CDATA[DB_ODS_LS]]></Field>
+	<Field name="MaxErr" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="MaxErrPrct" type="java.lang.String">null</Field>
+	<Field name="ModCode" type="java.lang.String"><![CDATA[ODS_DB]]></Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="OkExit" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="OkExitCode" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="OkNextStep" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ResName" type="java.lang.String"><![CDATA[ABC_TEMP]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="StepName" type="java.lang.String"><![CDATA[FIXED_FILE_MAP]]></Field>
+	<Field name="StepType" type="java.lang.String"><![CDATA[M]]></Field>
+	<Field name="TableName" type="java.lang.String"><![CDATA[ABC_TEMP]]></Field>
+	<Field name="VarIncr" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="VarLongValue" type="java.lang.String">null</Field>
+	<Field name="VarName" type="java.lang.String">null</Field>
+	<Field name="VarOp" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpScenTask">
+		<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColConnectId" type="java.lang.String">null</Field>
+	<Field name="ColContextCode" type="java.lang.String">null</Field>
+	<Field name="ColEncKey" type="java.lang.String">null</Field>
+	<Field name="ColEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="ColIndCommit" type="java.lang.String">null</Field>
+	<Field name="ColIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="ColIsolLevel" type="java.lang.String">null</Field>
+	<Field name="ColLschemaName" type="java.lang.String">null</Field>
+	<Field name="ColTechIntName" type="java.lang.String">null</Field>
+	<Field name="ColTxt" type="java.lang.String">null</Field>
+	<Field name="DefConnectId" type="java.lang.String">null</Field>
+	<Field name="DefContextCode" type="java.lang.String">null</Field>
+	<Field name="DefEncKey" type="java.lang.String">null</Field>
+	<Field name="DefEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="DefIndCommit" type="java.lang.String">null</Field>
+	<Field name="DefIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="DefIsolLevel" type="java.lang.String">null</Field>
+	<Field name="DefLschemaName" type="java.lang.String">null</Field>
+	<Field name="DefTechIntName" type="java.lang.String">null</Field>
+	<Field name="DefTxt" type="java.lang.String">null</Field>
+	<Field name="ExeChannel" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[f1a80b9f-dcd5-4093-ac40-60ca0df09217]]></Field>
+	<Field name="IndErr" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogFinalCmd" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogMethod" type="java.lang.String">null</Field>
+	<Field name="IndLogNb" type="java.lang.String">null</Field>
+	<Field name="LogLevDet" type="java.lang.String"><![CDATA[5]]></Field>
+	<Field name="MapTaskType" type="java.lang.String"><![CDATA[MC]]></Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="ParScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[80]]></Field>
+	<Field name="TaskName1" type="java.lang.String"><![CDATA[SERIAL]]></Field>
+	<Field name="TaskName2" type="java.lang.String"><![CDATA[MAP_CLEANUP]]></Field>
+	<Field name="TaskName3" type="java.lang.String">null</Field>
+	<Field name="TaskType" type="java.lang.String"><![CDATA[L]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpScenTask">
+		<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColConnectId" type="java.lang.String">null</Field>
+	<Field name="ColContextCode" type="java.lang.String">null</Field>
+	<Field name="ColEncKey" type="java.lang.String">null</Field>
+	<Field name="ColEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="ColIndCommit" type="java.lang.String">null</Field>
+	<Field name="ColIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="ColIsolLevel" type="java.lang.String">null</Field>
+	<Field name="ColLschemaName" type="java.lang.String">null</Field>
+	<Field name="ColTechIntName" type="java.lang.String">null</Field>
+	<Field name="ColTxt" type="java.lang.String">null</Field>
+	<Field name="DefConnectId" type="java.lang.String">null</Field>
+	<Field name="DefContextCode" type="java.lang.String">null</Field>
+	<Field name="DefEncKey" type="java.lang.String">null</Field>
+	<Field name="DefEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="DefIndCommit" type="java.lang.String">null</Field>
+	<Field name="DefIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="DefIsolLevel" type="java.lang.String">null</Field>
+	<Field name="DefLschemaName" type="java.lang.String">null</Field>
+	<Field name="DefTechIntName" type="java.lang.String">null</Field>
+	<Field name="DefTxt" type="java.lang.String">null</Field>
+	<Field name="ExeChannel" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[10d48b6f-9ced-4400-8d10-90341f0f1a01]]></Field>
+	<Field name="IndErr" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogFinalCmd" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogMethod" type="java.lang.String">null</Field>
+	<Field name="IndLogNb" type="java.lang.String">null</Field>
+	<Field name="LogLevDet" type="java.lang.String"><![CDATA[5]]></Field>
+	<Field name="MapTaskType" type="java.lang.String"><![CDATA[MC]]></Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="ParScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[80]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[90]]></Field>
+	<Field name="TaskName1" type="java.lang.String"><![CDATA[SERIAL]]></Field>
+	<Field name="TaskName2" type="java.lang.String"><![CDATA[EU]]></Field>
+	<Field name="TaskName3" type="java.lang.String"><![CDATA[FILE_CSV_LS_UNIT]]></Field>
+	<Field name="TaskType" type="java.lang.String"><![CDATA[L]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpScenTask">
+		<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColConnectId" type="java.lang.String">null</Field>
+	<Field name="ColContextCode" type="java.lang.String">null</Field>
+	<Field name="ColEncKey" type="java.lang.String">null</Field>
+	<Field name="ColEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="ColIndCommit" type="java.lang.String">null</Field>
+	<Field name="ColIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="ColIsolLevel" type="java.lang.String"><![CDATA[D]]></Field>
+	<Field name="ColLschemaName" type="java.lang.String"><![CDATA[FILE_CSV_LS]]></Field>
+	<Field name="ColTechIntName" type="java.lang.String">null</Field>
+	<Field name="ColTxt" type="java.lang.String">null</Field>
+	<Field name="DefConnectId" type="java.lang.String">null</Field>
+	<Field name="DefContextCode" type="java.lang.String">null</Field>
+	<Field name="DefEncKey" type="java.lang.String">null</Field>
+	<Field name="DefEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="DefIndCommit" type="java.lang.String">null</Field>
+	<Field name="DefIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="DefIsolLevel" type="java.lang.String">null</Field>
+	<Field name="DefLschemaName" type="java.lang.String"><![CDATA[DB_ODS_LS]]></Field>
+	<Field name="DefTechIntName" type="java.lang.String">null</Field>
+	<Field name="DefTxt" type="java.lang.String"><![CDATA[drop table <?= odiRef.getObjectName("L", "%COL_PRF0FIX", "W") ?>  ]]></Field>
+	<Field name="ExeChannel" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[d9e8bd2d-76fa-424a-9195-f9ce96dbe0af]]></Field>
+	<Field name="IndErr" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IndLogFinalCmd" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogMethod" type="java.lang.String">null</Field>
+	<Field name="IndLogNb" type="java.lang.String">null</Field>
+	<Field name="LogLevDet" type="java.lang.String"><![CDATA[5]]></Field>
+	<Field name="MapTaskType" type="java.lang.String"><![CDATA[MC]]></Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[31]]></Field>
+	<Field name="ParScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[90]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[100]]></Field>
+	<Field name="TaskName1" type="java.lang.String"><![CDATA[Drop work table]]></Field>
+	<Field name="TaskName2" type="java.lang.String"><![CDATA[LKM File to SQL]]></Field>
+	<Field name="TaskName3" type="java.lang.String">null</Field>
+	<Field name="TaskType" type="java.lang.String"><![CDATA[C]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpScenTask">
+		<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColConnectId" type="java.lang.String">null</Field>
+	<Field name="ColContextCode" type="java.lang.String">null</Field>
+	<Field name="ColEncKey" type="java.lang.String">null</Field>
+	<Field name="ColEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="ColIndCommit" type="java.lang.String">null</Field>
+	<Field name="ColIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="ColIsolLevel" type="java.lang.String">null</Field>
+	<Field name="ColLschemaName" type="java.lang.String">null</Field>
+	<Field name="ColTechIntName" type="java.lang.String">null</Field>
+	<Field name="ColTxt" type="java.lang.String">null</Field>
+	<Field name="DefConnectId" type="java.lang.String">null</Field>
+	<Field name="DefContextCode" type="java.lang.String">null</Field>
+	<Field name="DefEncKey" type="java.lang.String">null</Field>
+	<Field name="DefEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="DefIndCommit" type="java.lang.String">null</Field>
+	<Field name="DefIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="DefIsolLevel" type="java.lang.String">null</Field>
+	<Field name="DefLschemaName" type="java.lang.String">null</Field>
+	<Field name="DefTechIntName" type="java.lang.String">null</Field>
+	<Field name="DefTxt" type="java.lang.String">null</Field>
+	<Field name="ExeChannel" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[1aa30352-982c-4cc5-802e-4f90aeaffb5d]]></Field>
+	<Field name="IndErr" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogFinalCmd" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogMethod" type="java.lang.String">null</Field>
+	<Field name="IndLogNb" type="java.lang.String">null</Field>
+	<Field name="LogLevDet" type="java.lang.String"><![CDATA[5]]></Field>
+	<Field name="MapTaskType" type="java.lang.String"><![CDATA[EB]]></Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="ParScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[10]]></Field>
+	<Field name="TaskName1" type="java.lang.String"><![CDATA[SERIAL]]></Field>
+	<Field name="TaskName2" type="java.lang.String"><![CDATA[MAP_MAIN]]></Field>
+	<Field name="TaskName3" type="java.lang.String">null</Field>
+	<Field name="TaskType" type="java.lang.String"><![CDATA[L]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpScenTask">
+		<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColConnectId" type="java.lang.String">null</Field>
+	<Field name="ColContextCode" type="java.lang.String">null</Field>
+	<Field name="ColEncKey" type="java.lang.String">null</Field>
+	<Field name="ColEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="ColIndCommit" type="java.lang.String">null</Field>
+	<Field name="ColIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="ColIsolLevel" type="java.lang.String">null</Field>
+	<Field name="ColLschemaName" type="java.lang.String">null</Field>
+	<Field name="ColTechIntName" type="java.lang.String">null</Field>
+	<Field name="ColTxt" type="java.lang.String">null</Field>
+	<Field name="DefConnectId" type="java.lang.String">null</Field>
+	<Field name="DefContextCode" type="java.lang.String">null</Field>
+	<Field name="DefEncKey" type="java.lang.String">null</Field>
+	<Field name="DefEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="DefIndCommit" type="java.lang.String">null</Field>
+	<Field name="DefIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="DefIsolLevel" type="java.lang.String">null</Field>
+	<Field name="DefLschemaName" type="java.lang.String">null</Field>
+	<Field name="DefTechIntName" type="java.lang.String">null</Field>
+	<Field name="DefTxt" type="java.lang.String">null</Field>
+	<Field name="ExeChannel" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[518f1427-91c2-4334-a2cf-979891beb040]]></Field>
+	<Field name="IndErr" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogFinalCmd" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogMethod" type="java.lang.String">null</Field>
+	<Field name="IndLogNb" type="java.lang.String">null</Field>
+	<Field name="LogLevDet" type="java.lang.String"><![CDATA[5]]></Field>
+	<Field name="MapTaskType" type="java.lang.String"><![CDATA[EB]]></Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="ParScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[10]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[20]]></Field>
+	<Field name="TaskName1" type="java.lang.String"><![CDATA[SERIAL]]></Field>
+	<Field name="TaskName2" type="java.lang.String"><![CDATA[EU]]></Field>
+	<Field name="TaskName3" type="java.lang.String"><![CDATA[FILE_CSV_LS_UNIT]]></Field>
+	<Field name="TaskType" type="java.lang.String"><![CDATA[L]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpScenTask">
+		<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColConnectId" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="ColContextCode" type="java.lang.String">null</Field>
+	<Field name="ColEncKey" type="java.lang.String">null</Field>
+	<Field name="ColEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="ColIndCommit" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="ColIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="ColIsolLevel" type="java.lang.String">null</Field>
+	<Field name="ColLschemaName" type="java.lang.String"><![CDATA[FILE_CSV_LS]]></Field>
+	<Field name="ColTechIntName" type="java.lang.String"><![CDATA[FILE]]></Field>
+	<Field name="ColTxt" type="java.lang.String"><![CDATA[select	FIX.C1	C1
+from 	<?= odiRef.getObjectName("L", "#FIRST_PROJ.V_INP_FILE", "FILE_CSV_LS", "D") ?> FIX
+/*$$SNPS_START_KEYSNP$CRDWG_TABLESNP$CRTABLE_NAME=FIXED_CSVSNP$CRLOAD_FILE=<?=snpRef.getObjectName("L", "#FIRST_PROJ.V_INP_FILE", "D") ?>SNP$CRFILE_FORMAT=FSNP$CRFILE_SEP_FIELD=SNP$CRFILE_SEP_LINE=0x000D0x000ASNP$CRFILE_FIRST_ROW=1SNP$CRFILE_ENC_FIELD=SNP$CRFILE_DEC_SEP=SNP$CRSNP$CRDWG_COLSNP$CRCOL_NAME=C1SNP$CRTYPE_NAME=NUMERICSNP$CRORDER=0SNP$CRLINE_OFFSET=1SNP$CRLENGTH=5SNP$CRPRECISION=5SNP$CRACTION_ON_ERROR=NULLSNP$CRSNP$CRDWG_COLSNP$CRCOL_NAME=C2SNP$CRTYPE_NAME=STRINGSNP$CRORDER=0SNP$CRLINE_OFFSET=6SNP$CRLENGTH=8SNP$CRPRECISION=8SNP$CRACTION_ON_ERROR=NULLSNP$CRSNP$CRDWG_COLSNP$CRCOL_NAME=C3SNP$CRTYPE_NAME=STRINGSNP$CRORDER=0SNP$CRLINE_OFFSET=14SNP$CRLENGTH=6SNP$CRPRECISION=6SNP$CRACTION_ON_ERROR=NULLSNP$CRSNP$CRDWG_COLSNP$CRCOL_NAME=C4SNP$CRTYPE_NAME=STRINGSNP$CRORDER=0SNP$CRLINE_OFFSET=20SNP$CRLENGTH=9SNP$CRPRECISION=9SNP$CRACTION_ON_ERROR=NULLSNP$CR$$SNPS_END_KEY*/
+  ]]></Field>
+	<Field name="DefConnectId" type="java.lang.String">null</Field>
+	<Field name="DefContextCode" type="java.lang.String">null</Field>
+	<Field name="DefEncKey" type="java.lang.String">null</Field>
+	<Field name="DefEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="DefIndCommit" type="java.lang.String">null</Field>
+	<Field name="DefIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="DefIsolLevel" type="java.lang.String">null</Field>
+	<Field name="DefLschemaName" type="java.lang.String"><![CDATA[DB_ODS_LS]]></Field>
+	<Field name="DefTechIntName" type="java.lang.String">null</Field>
+	<Field name="DefTxt" type="java.lang.String"><![CDATA[insert into <?= odiRef.getObjectName("L", "%COL_PRF0FIX", "W") ?>
+(
+	C1
+)
+values
+(
+	<?= (char) 58 + "C1" ?>
+)
+  ]]></Field>
+	<Field name="ExeChannel" type="java.lang.String"><![CDATA[J]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[5ba6bb92-e562-4401-9da9-87ef5356bfc8]]></Field>
+	<Field name="IndErr" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogFinalCmd" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogMethod" type="java.lang.String">null</Field>
+	<Field name="IndLogNb" type="java.lang.String">null</Field>
+	<Field name="LogLevDet" type="java.lang.String"><![CDATA[5]]></Field>
+	<Field name="MapTaskType" type="java.lang.String"><![CDATA[EM]]></Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[21]]></Field>
+	<Field name="ParScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[20]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[50]]></Field>
+	<Field name="TaskName1" type="java.lang.String"><![CDATA[Load data]]></Field>
+	<Field name="TaskName2" type="java.lang.String"><![CDATA[LKM File to SQL]]></Field>
+	<Field name="TaskName3" type="java.lang.String">null</Field>
+	<Field name="TaskType" type="java.lang.String"><![CDATA[C]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpScenTask">
+		<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColConnectId" type="java.lang.String">null</Field>
+	<Field name="ColContextCode" type="java.lang.String">null</Field>
+	<Field name="ColEncKey" type="java.lang.String">null</Field>
+	<Field name="ColEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="ColIndCommit" type="java.lang.String">null</Field>
+	<Field name="ColIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="ColIsolLevel" type="java.lang.String"><![CDATA[D]]></Field>
+	<Field name="ColLschemaName" type="java.lang.String"><![CDATA[FILE_CSV_LS]]></Field>
+	<Field name="ColTechIntName" type="java.lang.String">null</Field>
+	<Field name="ColTxt" type="java.lang.String">null</Field>
+	<Field name="DefConnectId" type="java.lang.String">null</Field>
+	<Field name="DefContextCode" type="java.lang.String">null</Field>
+	<Field name="DefEncKey" type="java.lang.String">null</Field>
+	<Field name="DefEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="DefIndCommit" type="java.lang.String">null</Field>
+	<Field name="DefIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="DefIsolLevel" type="java.lang.String">null</Field>
+	<Field name="DefLschemaName" type="java.lang.String"><![CDATA[DB_ODS_LS]]></Field>
+	<Field name="DefTechIntName" type="java.lang.String">null</Field>
+	<Field name="DefTxt" type="java.lang.String"><![CDATA[create table <?= odiRef.getObjectName("L", "%COL_PRF0FIX", "W") ?>
+(
+	C1	NUMBER(5,0) NULL
+)  ]]></Field>
+	<Field name="ExeChannel" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[14695106-def3-4f57-b1d3-76308bfe1ab6]]></Field>
+	<Field name="IndErr" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogFinalCmd" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogMethod" type="java.lang.String">null</Field>
+	<Field name="IndLogNb" type="java.lang.String">null</Field>
+	<Field name="LogLevDet" type="java.lang.String"><![CDATA[5]]></Field>
+	<Field name="MapTaskType" type="java.lang.String"><![CDATA[EM]]></Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[11]]></Field>
+	<Field name="ParScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[20]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[40]]></Field>
+	<Field name="TaskName1" type="java.lang.String"><![CDATA[Create work table]]></Field>
+	<Field name="TaskName2" type="java.lang.String"><![CDATA[LKM File to SQL]]></Field>
+	<Field name="TaskName3" type="java.lang.String">null</Field>
+	<Field name="TaskType" type="java.lang.String"><![CDATA[C]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpScenTask">
+		<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColConnectId" type="java.lang.String">null</Field>
+	<Field name="ColContextCode" type="java.lang.String">null</Field>
+	<Field name="ColEncKey" type="java.lang.String">null</Field>
+	<Field name="ColEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="ColIndCommit" type="java.lang.String">null</Field>
+	<Field name="ColIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="ColIsolLevel" type="java.lang.String"><![CDATA[D]]></Field>
+	<Field name="ColLschemaName" type="java.lang.String"><![CDATA[FILE_CSV_LS]]></Field>
+	<Field name="ColTechIntName" type="java.lang.String">null</Field>
+	<Field name="ColTxt" type="java.lang.String">null</Field>
+	<Field name="DefConnectId" type="java.lang.String">null</Field>
+	<Field name="DefContextCode" type="java.lang.String">null</Field>
+	<Field name="DefEncKey" type="java.lang.String">null</Field>
+	<Field name="DefEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="DefIndCommit" type="java.lang.String">null</Field>
+	<Field name="DefIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="DefIsolLevel" type="java.lang.String">null</Field>
+	<Field name="DefLschemaName" type="java.lang.String"><![CDATA[DB_ODS_LS]]></Field>
+	<Field name="DefTechIntName" type="java.lang.String">null</Field>
+	<Field name="DefTxt" type="java.lang.String"><![CDATA[drop table <?= odiRef.getObjectName("L", "%COL_PRF0FIX", "W") ?>  ]]></Field>
+	<Field name="ExeChannel" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[37dcd99b-1d0f-45bb-aac1-b7a77c6af632]]></Field>
+	<Field name="IndErr" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IndLogFinalCmd" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogMethod" type="java.lang.String">null</Field>
+	<Field name="IndLogNb" type="java.lang.String">null</Field>
+	<Field name="LogLevDet" type="java.lang.String"><![CDATA[5]]></Field>
+	<Field name="MapTaskType" type="java.lang.String"><![CDATA[EM]]></Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="ParScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[20]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[30]]></Field>
+	<Field name="TaskName1" type="java.lang.String"><![CDATA[Drop work table]]></Field>
+	<Field name="TaskName2" type="java.lang.String"><![CDATA[LKM File to SQL]]></Field>
+	<Field name="TaskName3" type="java.lang.String">null</Field>
+	<Field name="TaskType" type="java.lang.String"><![CDATA[C]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpScenTask">
+		<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColConnectId" type="java.lang.String">null</Field>
+	<Field name="ColContextCode" type="java.lang.String">null</Field>
+	<Field name="ColEncKey" type="java.lang.String">null</Field>
+	<Field name="ColEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="ColIndCommit" type="java.lang.String">null</Field>
+	<Field name="ColIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="ColIsolLevel" type="java.lang.String">null</Field>
+	<Field name="ColLschemaName" type="java.lang.String">null</Field>
+	<Field name="ColTechIntName" type="java.lang.String">null</Field>
+	<Field name="ColTxt" type="java.lang.String">null</Field>
+	<Field name="DefConnectId" type="java.lang.String">null</Field>
+	<Field name="DefContextCode" type="java.lang.String">null</Field>
+	<Field name="DefEncKey" type="java.lang.String">null</Field>
+	<Field name="DefEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="DefIndCommit" type="java.lang.String">null</Field>
+	<Field name="DefIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="DefIsolLevel" type="java.lang.String">null</Field>
+	<Field name="DefLschemaName" type="java.lang.String">null</Field>
+	<Field name="DefTechIntName" type="java.lang.String">null</Field>
+	<Field name="DefTxt" type="java.lang.String">null</Field>
+	<Field name="ExeChannel" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[dc987e78-cd35-458a-a649-7cffd02d6cfd]]></Field>
+	<Field name="IndErr" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogFinalCmd" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogMethod" type="java.lang.String">null</Field>
+	<Field name="IndLogNb" type="java.lang.String">null</Field>
+	<Field name="LogLevDet" type="java.lang.String"><![CDATA[5]]></Field>
+	<Field name="MapTaskType" type="java.lang.String"><![CDATA[EB]]></Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="ParScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[10]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[60]]></Field>
+	<Field name="TaskName1" type="java.lang.String"><![CDATA[SERIAL]]></Field>
+	<Field name="TaskName2" type="java.lang.String"><![CDATA[EU]]></Field>
+	<Field name="TaskName3" type="java.lang.String"><![CDATA[DB_ODS_LS_UNIT]]></Field>
+	<Field name="TaskType" type="java.lang.String"><![CDATA[L]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpScenTask">
+		<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColConnectId" type="java.lang.String">null</Field>
+	<Field name="ColContextCode" type="java.lang.String">null</Field>
+	<Field name="ColEncKey" type="java.lang.String">null</Field>
+	<Field name="ColEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="ColIndCommit" type="java.lang.String">null</Field>
+	<Field name="ColIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="ColIsolLevel" type="java.lang.String"><![CDATA[D]]></Field>
+	<Field name="ColLschemaName" type="java.lang.String"><![CDATA[DB_ODS_LS]]></Field>
+	<Field name="ColTechIntName" type="java.lang.String">null</Field>
+	<Field name="ColTxt" type="java.lang.String">null</Field>
+	<Field name="DefConnectId" type="java.lang.String">null</Field>
+	<Field name="DefContextCode" type="java.lang.String">null</Field>
+	<Field name="DefEncKey" type="java.lang.String">null</Field>
+	<Field name="DefEncKeyVect" type="java.lang.String">null</Field>
+	<Field name="DefIndCommit" type="java.lang.String">null</Field>
+	<Field name="DefIndEnc" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="DefIsolLevel" type="java.lang.String"><![CDATA[D]]></Field>
+	<Field name="DefLschemaName" type="java.lang.String"><![CDATA[DB_ODS_LS]]></Field>
+	<Field name="DefTechIntName" type="java.lang.String"><![CDATA[ORACLE]]></Field>
+	<Field name="DefTxt" type="java.lang.String"><![CDATA[
+INSERT 
+  /*+  APPEND PARALLEL  */ 
+  INTO <?= odiRef.getObjectName("L", "ABC_TEMP", "DB_ODS_LS", "D") ?>
+  (
+    C1 
+  ) 
+SELECT 
+  FIX_A.C1  
+FROM 
+  <?= odiRef.getObjectName("L", "%COL_PRF0FIX", "DB_ODS_LS", "W") ?> FIX_A   ]]></Field>
+	<Field name="ExeChannel" type="java.lang.String"><![CDATA[J]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[03faa008-bfee-4e50-9c2a-152901163a23]]></Field>
+	<Field name="IndErr" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogFinalCmd" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogMethod" type="java.lang.String">null</Field>
+	<Field name="IndLogNb" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="LogLevDet" type="java.lang.String"><![CDATA[5]]></Field>
+	<Field name="MapTaskType" type="java.lang.String"><![CDATA[EM]]></Field>
+	<Field name="Nno" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[10]]></Field>
+	<Field name="ParScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[60]]></Field>
+	<Field name="ScenNo" type="com.sunopsis.sql.DbInt"><![CDATA[23]]></Field>
+	<Field name="ScenTaskNo" type="com.sunopsis.sql.DbInt"><![CDATA[70]]></Field>
+	<Field name="TaskName1" type="java.lang.String"><![CDATA[Insert new rows]]></Field>
+	<Field name="TaskName2" type="java.lang.String"><![CDATA[IKM Oracle Insert]]></Field>
+	<Field name="TaskName3" type="java.lang.String"><![CDATA[Load ABC_TEMP]]></Field>
+	<Field name="TaskType" type="java.lang.String"><![CDATA[J]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_PACKAGE.11]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[a33b889f-a1b0-4cbb-b06d-4a816ac487d5]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[FIRST_PROJ.TEST_PROJ.FILE_PKG]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_PROJECT.SNP_FOLDER.SNP_PACKAGE]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[10.9.8]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_SCEN.23]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[2783da59-71b1-46c8-813d-67905acbbdbc]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[FIRST_PROJ.TEST_PROJ.FILE_PKG.FILE_PKG Version 001]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_PROJECT.SNP_FOLDER.SNP_PACKAGE.SNP_SCEN]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[10.9.8.20]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_SCENREPORT.23.89]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[93d3e778-43f8-4564-a0bf-b16b5d6904ee]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[FIRST_PROJ.TEST_PROJ.FILE_PKG.FILE_PKG Version 001.Internal - GLOBAL - 2018-09-26 09:23:03.0]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_PROJECT.SNP_FOLDER.SNP_PACKAGE.SNP_SCEN.SNP_SCENREPORT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[10.9.8.20.41]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_SCENREPORT.23.134]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[98d12fdf-4f2c-4e75-a2b7-698fc86a37c5]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[FIRST_PROJ.TEST_PROJ.FILE_PKG.FILE_PKG Version 001.OracleDIAgent - DEV - 2018-09-26 22:47:35.0]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_PROJECT.SNP_FOLDER.SNP_PACKAGE.SNP_SCEN.SNP_SCENREPORT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[10.9.8.20.43]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_SCENREPORT.23.135]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[f78b82a6-411e-44f5-9469-ce9ad74c0aa4]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[FIRST_PROJ.TEST_PROJ.FILE_PKG.FILE_PKG Version 001.OracleDIAgent - DEV - 2018-09-26 22:50:18.0]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_PROJECT.SNP_FOLDER.SNP_PACKAGE.SNP_SCEN.SNP_SCENREPORT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[10.9.8.20.43]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_SCENREPORT.23.136]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[0e144be4-f2e8-446f-b31b-2a7dfb3cc199]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[FIRST_PROJ.TEST_PROJ.FILE_PKG.FILE_PKG Version 001.OracleDIAgent - DEV - 2018-09-26 23:25:03.0]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_PROJECT.SNP_FOLDER.SNP_PACKAGE.SNP_SCEN.SNP_SCENREPORT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[10.9.8.20.43]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_SCENSTEP.23.0]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[fadd98b1-c7eb-4bcb-aa2f-0aa21047a751]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String">null</Field>
+ <Field name="RefObjFQType" type="java.lang.String">null</Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_SCENSTEP.23.1]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[5c658075-c550-4d1f-860a-155d0207a5c9]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String">null</Field>
+ <Field name="RefObjFQType" type="java.lang.String">null</Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.DwgExportSummary">
+		<Field name="ExpTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="InstObjNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="JoinColNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="JoinNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="KeyColNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="KeyNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="LinkDiagNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="MorigTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="MtxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="OrigTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="OtherObjectsNb" type="com.sunopsis.sql.DbInt"><![CDATA[35]]></Field>
+	<Field name="PlanAgentNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="StepNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="TxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="UeOrigNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="UeUsedNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="VarPlanAgentNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="ScenTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="OdiVersion" type="java.lang.String"><![CDATA[12.2.1]]></Field>
+	<Field name="OriginRepositoryID" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="RepositoryVersion" type="java.lang.String"><![CDATA[05.02.02.07]]></Field>
+</Object>
+</SunopsisExport>
