@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SunopsisExport>
 <Admin RepositoryVersion="05.02.02.07" IsLegacyIdCompatible="false" />
-<Encryption algorithm="AES" keyLength="128" exportKeyHash="" keyVect="q7OFDQwkC3lJtk3EVAO8eA==" exportKeySalt="f6b68b30-1159-4df2-a2d9-5d015ea2bd37" containsCipherText="false"/>
+<Encryption algorithm="AES" keyLength="128" exportKeyHash="" keyVect="kt99tMuVm9CQNn1fzbtsKw==" exportKeySalt="97385bca-feea-476b-9e38-ac9168eb2454" containsCipherText="false"/>
 <Object class="com.sunopsis.dwg.dbobj.SnpPschema">
 		<Field name="AdditionalOption" type="java.lang.String">null</Field>
 	<Field name="BicsTargetType" type="java.lang.String">null</Field>
@@ -21,14 +21,14 @@
 	<Field name="IdxPrfTab" type="java.lang.String"><![CDATA[IX$_]]></Field>
 	<Field name="IndChange" type="java.lang.String"><![CDATA[U]]></Field>
 	<Field name="IntPrfTab" type="java.lang.String"><![CDATA[I$_]]></Field>
-	<Field name="IntVersion" type="com.sunopsis.sql.DbInt"><![CDATA[36]]></Field>
+	<Field name="IntVersion" type="com.sunopsis.sql.DbInt"><![CDATA[39]]></Field>
 	<Field name="IConnect" type="com.sunopsis.sql.DbInt"><![CDATA[57]]></Field>
 	<Field name="IPschema" type="com.sunopsis.sql.DbInt"><![CDATA[33]]></Field>
 	<Field name="ITargetPschema" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
 	<Field name="JrnPrfTab" type="java.lang.String"><![CDATA[J$]]></Field>
 	<Field name="JrnPrfTrg" type="java.lang.String"><![CDATA[T$]]></Field>
 	<Field name="JrnPrfVie" type="java.lang.String"><![CDATA[JV$]]></Field>
-	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2018-09-27 01:02:23.0]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2018-09-27 10:58:50.0]]></Field>
 	<Field name="LastUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
 	<Field name="LocObjPattern" type="java.lang.String">null</Field>
 	<Field name="LocSeqCurrPattern" type="java.lang.String">null</Field>
